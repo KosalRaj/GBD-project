@@ -1,0 +1,9 @@
+@font-face {
+	font-family: Metropolis;
+	src: url('metropolis-regular-webfont.woff2') format('woff2'),
+		url('metropolis-regular-webfont.woff') format('woff');
+}
+
+body {
+	font-family: 'Metropolis', sans-serif;
+}
