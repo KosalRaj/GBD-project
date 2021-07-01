@@ -4,6 +4,29 @@
 		url('metropolis-regular-webfont.woff') format('woff');
 }
 
+:root {
+	--button-bg: #fe2d9d;
+	--button-bg-hover: #fe006f;
+	--grey: #e8e8e8;
+	--red-fg: #d63031
+	--red-bg: #e87e7e;
+	--blue: #4696e6;
+	--pink-bg: rgba(253, 121, 168, 0.08);
+	--blue-bg-: rgba(117, 186, 255, 0.08);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body {
 	font-family: 'Metropolis', sans-serif;
+}
+
+#body {
+	height: 1200px;
 }
