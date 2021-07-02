@@ -44,13 +44,17 @@ body {
 .header {
 	background: var(--grey);
 	height: 100px;
-	align-self: center;
 }
 
 .header-container {
 	display: flex;
+	height: 100px;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.search-form {
+	width: 25%;
 }
 
 input[type="search"] {
@@ -66,6 +70,6 @@ input[type="search"] {
 
 input[type="search"]::placeholder {
 	background: url(../assets/svg/search.svg) no-repeat;
-	background-position-x: 15%;
+	background-position: 30% 50%;
 	text-align: center;
 }
