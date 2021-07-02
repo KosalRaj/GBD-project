@@ -1,13 +1,15 @@
+@import url('http://fonts.cdnfonts.com/css/metropolis-2?styles=21180,21184,21188,21176');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Metropolis', sans-serif;
 }
 
 
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background-color: lavenderblush;
 }
   .breadcrumb ul {
@@ -103,4 +105,32 @@ display: flex;
       width: 150px;
       padding:10px;
   }
-  
+
+  .container{
+   position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .container .product{
+    width: 100%;
+    background: #fff;
+  }
+
+  .container .product .img{
+    position: relative;
+    width: 100%;
+    height: 310px;
+
+  }
+
+  .container .product .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
