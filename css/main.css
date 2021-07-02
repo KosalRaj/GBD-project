@@ -1,8 +1,10 @@
 @font-face {
 	font-family: Metropolis;
-	src: url('metropolis-regular-webfont.woff2') format('woff2'),
-		url('metropolis-regular-webfont.woff') format('woff');
+	src: url('../assets/fonts/metropolis-regular-webfont.woff2') format('woff2'),
+		url('../assets/fonts/metropolis-regular-webfont.woff') format('woff');
 }
+
+@import url("https://use.fontawesome.com/releases/v5.15.0/css/all.css");
 
 :root {
 	--button-bg: #fe2d9d;
@@ -29,4 +31,41 @@ body {
 
 #body {
 	height: 1200px;
+}
+
+
+/*=== === === === === Header === === === === === */
+.container {
+	max-width: 1640px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.header {
+	background: var(--grey);
+	height: 100px;
+	align-self: center;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+input[type="search"] {
+	background: none;
+	border: none;
+	box-shadow: 0 2px 0 0 black;
+	border-radius: 24x;
+	-webkit-border-radius: 24x;
+	-moz-border-radius: 24x;
+	-ms-border-radius: 24x;
+	-o-border-radius: 24x;
+}
+
+input[type="search"]::placeholder {
+	background: url(../assets/svg/search.svg) no-repeat;
+	background-position-x: 15%;
+	text-align: center;
 }
