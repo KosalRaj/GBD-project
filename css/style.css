@@ -10,7 +10,7 @@
 
 
 body{
-    background-color: lavenderblush;
+    background-color: rgb(255, 255, 255);
 }
   .breadcrumb ul {
     display: flex;
@@ -106,31 +106,4 @@ display: flex;
       padding:10px;
   }
 
-  .container{
-   position: relative;
-    width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
-    grid-gap: 20px;
-  }
-
-  .container .product{
-    width: 100%;
-    background: #fff;
-  }
-
-  .container .product .img{
-    position: relative;
-    width: 100%;
-    height: 310px;
-
-  }
-
-  .container .product .img img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
+ 
