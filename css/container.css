@@ -34,6 +34,7 @@ h6,del{
     position:absolute;
     top: -8px;
     left: -8px;
+    z-index: 45;
   }
  
  .content{
@@ -113,11 +114,20 @@ margin-bottom: 1rem;
     cursor: pointer; 
     z-index: 30;
     transition:ease-in .5s ;
+    display: none;
   }
-  .view-btn:hover{
+ .view-btn:hover{
     background: rgb(255, 255, 255,0.8);
+    
   }
   .view-btn:hover img{
     filter: blur(8px);
     -webkit-filter: blur(8px);
+    
   }
+  .img:hover .view-btn{
+    display: flex;
+
+  }
+
+  

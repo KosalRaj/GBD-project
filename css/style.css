@@ -83,6 +83,7 @@ display: flex;
     box-shadow: 0 2px 4px 0 rgba(65, 65, 65, 0.2), 0 6px 20px 0 rgba(112, 112, 112, 0.19);
     cursor:pointer;
     
+    
    
 
 }
@@ -93,7 +94,8 @@ display: flex;
       position: absolute;
       left: 0;
       top:100%;
-      background-color: rgba(255, 255, 255, 0.993);
+      background-color: rgba(255, 255, 255, 0.75);
+      z-index: 50;
   }
 
   .menu ul li:hover .dropdown__content ul{
