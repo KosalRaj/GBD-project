@@ -1,3 +1,3 @@
 # GBD-project
 
-E-commerce site project bu GDB design intern.
+E-commerce site project by GDB design intern.
