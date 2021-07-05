@@ -1,0 +1,19 @@
+$color__black: #000;
+$color__white: #fff;
+$color__grey: #e8e8e8;
+$color__red--fg: #d63031;
+$color__red--bg: #e87e7e;
+$color__btn--bg: #FE2D9D;
+$color__btn--bg-hover: #FE2D9D;
+
+$width__max: 1640px;
+
+$text__size--base: 1rem;
+
+@font-face {
+  font-family: Metropolis;
+  src: url("../assets/fonts/metropolis-regular-webfont.woff") format("woff")
+    url("../assets/fonts/metropolis-regular-webfont.woff2") format("woff2");
+}
+
+$text__family--sans: "Metropolis", sans-serif;

@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+@mixin text(
+  $size: $text__size--base,
+  $weight: normal,
+  $transform: none,
+  $decoration: none
+) {
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: $transform;
+  text-decoration: $decoration;
+}
+
+@mixin input() {
+  border: none;
+  border-bottom: 2px solid $color__black;
+  line-height: 60px;
+  text-indent: 30px;
+	outline: none;
+}
+
+@mixin shadow() {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+@mixin button() {
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	color: $color__white;
+	padding: 1.125em 2.25em;
+	background: #FE2D9D;
+	border: none;
+	filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-filter: drop-shadow(0 0.1875rem 6px rgba(0, 0, 0, 0.25));
+}
