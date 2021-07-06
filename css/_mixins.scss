@@ -1,17 +1,5 @@
 @use 'variables' as *;
 
-@mixin text(
-  $size: $text__size--base,
-  $weight: normal,
-  $transform: none,
-  $decoration: none
-) {
-  font-size: $size;
-  font-weight: $weight;
-  text-transform: $transform;
-  text-decoration: $decoration;
-}
-
 @mixin input() {
   border: none;
   border-bottom: 2px solid $color__black;
@@ -20,8 +8,8 @@
 	outline: none;
 }
 
-@mixin shadow() {
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+@mixin shadow($x: 0, $y: 3px, $blur: 6px, $color: $color__shadow) {
+	box-shadow: $x $y $blur $color;
 }
 
 @mixin button() {
@@ -29,14 +17,24 @@
 	font-weight: bold;
 	text-align: center;
 	color: $color__white;
-	padding: 1.125em 2.25em;
-	background: #FE2D9D;
+	padding: 0.3125em 1.125em;
+	background: $color__btn--bg;
 	border: none;
-	filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
+	@include shadow();
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	-ms-border-radius: 4px;
 	-o-border-radius: 4px;
-	-webkit-filter: drop-shadow(0 0.1875rem 6px rgba(0, 0, 0, 0.25));
+	
+	&:hover {
+		transform: scale(1.02);
+		color: white;
+		background: $color__btn--bg-hover;
+		@include shadow($y: 4px, $blur: 18px);
+		-webkit-transform: scale(1.02);
+		-moz-transform: scale(1.02);
+		-ms-transform: scale(1.02);
+		-o-transform: scale(1.02);
+}
 }

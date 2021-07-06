@@ -10,6 +10,10 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -21,9 +25,9 @@
 				<div class="navbar navbar-light main-header">
 					<div class="container-fluid">
 						<a href="#" class="navbar-brand">
-							<img src="./assets/img/logo.png" alt="logo" height="60">
+							<img src="./assets/img/logo.png" alt="logo">
 						</a>
-			
+
 						<form action="#" class="header__search-form">
 							<input type="search" placeholder="Find products" class="header__search-input">
 						</form>
@@ -40,7 +44,7 @@
 								<span class="bag__count">20</span>
 							</div>
 						</div>
-						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -94,6 +98,11 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
+					<div class="banner__content">
+						<h1 class="banner__heading">Get yourself styled</h1>
+						<h4 class="banner__sub-heading">With our all new arrivals And make you a new you</h4>
+						<a href="#" class="banner__btn btn">Shop Now</a>
+					</div>
 					<img src="./assets/img/slider-img.png" class="d-block w-100" alt="banner1">
 				</div>
 				<div class="carousel-item">
@@ -114,8 +123,589 @@
 		</div>
 	</section>
 
-	<section id="body">
-		<div class="container"></div>
+	<section id="products-slider">
+		<div class="section-container product-slider-container">
+			<!-- bootstrap carousel -->
+			<div class="sale__container">
+				<div class="row slider__header">
+					<div class="col slider__heading">On Sale Now</div>
+					<div class="col controls text-end">
+						<a class="slide-control slide-control__prev" data-bs-target="#sale-section" data-bs-slide="prev">
+							<i class="fas fa-chevron-left"></i></a>
+						<a class="slide-control slide-control__next" data-bs-target="#sale-section" data-bs-slide="next">
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>
+				</div>
+	
+				<div id="sale-section" class="sale-section carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row justify-content-around">
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img">
+										<img src="assets/img/product-image@2x.png">
+									</div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img">
+										<img src="assets/img/product-image@2x.png">
+									</div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image@2x.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image@2x.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<div class="carousel-item">
+							<div class="row justify-content-around">
+								<div class="col-md-3 product__card">
+									<div class="product__img">
+										<img src="assets/img/product-image_e.png">
+									</div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<div class="product__img"><img src="assets/img/product-image_g.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<div class="product__img"><img src="assets/img/product-image@2x.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<div class="product__img"><img src="assets/img/product-image@2x.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<div class="carousel-item">
+							<div class="row justify-content-around">
+								<div class="col-md-3 product__card">
+									<div class="product__img"><img src="assets/img/product-image_e.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<div class="product__img"><img src="assets/img/product-image_g.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<div class="product__img"><img src="assets/img/product-image@2x.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<div class="product__img"><img src="assets/img/product-image_h.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="d-flex justify-content-end">
+					<a href="#" class="view-all">
+						View All <i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+	
+			<!-- bootstrap carousel -->
+			<div class="best-seller__container">
+				<div class="row slider__header">
+					<div class="col slider__heading">Best Seller</div>
+					<div class="col controls text-end">
+						<a class="slide-control slide-control__prev" data-bs-target="#best-seller-section" data-bs-slide="prev">
+							<i class="fas fa-chevron-left"></i>
+						</a>
+						<a class="slide-control slide-control__next" data-bs-target="#best-seller-section" data-bs-slide="next">
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>
+				</div>
+	
+				<div id="best-seller-section" class="best-seller-section carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row justify-content-around">
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image@2x.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<img src="assets/img/product-image@2x.png">
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<img src="assets/img/product-image@2x.png">
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<img src="assets/img/product-image@2x.png">
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<div class="carousel-item">
+							<div class="row justify-content-around">
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image_e.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image_g.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image@2x.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image@2x.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<div class="carousel-item">
+							<div class="row justify-content-around">
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image_e.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image_g.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image@2x.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 product__card">
+									<!-- <button class="view-btn">Quick View</button> -->
+									<div class="product__img"><img src="assets/img/product-image_h.png"></div>
+									<div class="product__info">
+										<div class="product__title">
+											Solid A-Line Dress
+										</div>
+										<div class="product__ratings">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+											<span>(77)</span>
+										</div>
+										<div class="product__price">
+											<del class="old-price">Rs.1650</del>
+											<span class="current-price">Rs.1320</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="d-flex justify-content-end">
+					<a href="#" class="view-all">
+						View All <i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="footer">
@@ -180,10 +770,10 @@
 								<span><img src="./assets/svg/mail.svg" alt="mail"></span>
 								store@gmail.com
 							</li>
-							</ul>
-							<div class="social-links d-flex">
-								<span class="facebook">
-									<img src="./assets/svg/facebook.svg" alt="facebook">
+						</ul>
+						<div class="social-links d-flex">
+							<span class="facebook">
+								<img src="./assets/svg/facebook.svg" alt="facebook">
 							</span>
 							<span class="twitter">
 								<img src="./assets/svg/twitter.svg" alt="twitter">
