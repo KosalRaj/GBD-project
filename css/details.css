@@ -91,7 +91,8 @@ height: 100%;
 .heading{
 padding-right: 18rem;
 margin-top: 30px;
-
-
 }
-
+.line{
+    border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
