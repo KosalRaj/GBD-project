@@ -1,89 +1,143 @@
-@import url('http://fonts.cdnfonts.com/css/metropolis-2?styles=21180,21184,21188,21176');
+@import url("http://fonts.cdnfonts.com/css/metropolis-2?styles=21180,21184,21188,21176");
 .dark-font .breadcrumb-item + .breadcrumb-item::before {
-    color: rgb(0, 0, 0); }
-    .dark-font .breadcrumb-item.active {
-    color: #12aef7;
- }
- .black-text{
-     color: rgb(0, 0, 0);
- }
-.carousel-item{
-    height: 550px;
-    width: 450px;
+  color: rgb(0, 0, 0);
 }
-.carousel-item img{
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
+.dark-font .breadcrumb-item.active {
+  color: #12aef7;
+}
+.black-text {
+  color: rgb(0, 0, 0);
+}
+.carousel-item {
+  height: 550px;
+  width: 450px;
+}
+.carousel-item img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon /*, .carousel-indicators */ {
-    filter: invert(100%);
+  filter: invert(100%);
 }
-#carouselExampleControls{
-width: min-content;
-height: 100%;
+#carouselExampleControls {
+  width: min-content;
+  height: 100%;
 }
-.vertical-img img{
-    width: 100px;
-    height: auto;
-    object-fit: contain;
-}
-
-.size-box>div{
-    border: 1px solid black;
-    padding: 0.20rem;
-    margin-right: 1rem;
-    width: 35px;
-    display: flex;                  
-    justify-content: center;
-    
-}
-.color-choice>div{
-    width: 20px;
-    height: 20px;
-}
-.color-choice .color1{    
-    background-image: linear-gradient(to right top, #a8fa91, #bbf584, #d4f780, #e9f678, #fff573);
-    border: 1px solid black;
-
-}
-.color-choice .color2{
-    background-image: linear-gradient(to right top, #555df8, #7a3cf5, #ab34fb, #d626fe, #ff00ff);
-    border: 1px solid black;
-}
-.color-choice .color3{
-    background-image: linear-gradient(to right top, #ffc7c7, #f9c8e0, #e4cef6, #c4d7ff, #a5e0ff);
-    border: 1px solid black;
-}
-.stars .far:before,.stars .fas:before{
-    color:#BD9758;
+.vertical-img img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
 }
 
-.number-of-items{
-    width: 35px;
-    border: 1px solid black;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.size-box > div {
+  border: 1px solid black;
+  padding: 0.2rem;
+  margin-right: 1rem;
+  width: 35px;
+  display: flex;
+  justify-content: center;
 }
-.cart-btn button{
-    background: black;
-    color: white;
-    letter-spacing: 2px;
-    padding: 1rem;
-    width: 250px;
+.color-choice > div {
+  width: 20px;
+  height: 20px;
 }
-.fav{
-    background: rgb(206, 206, 206);
-    border-radius: 50%;
-    
+.color-choice .color1 {
+  background-image: linear-gradient(
+    to right top,
+    #a8fa91,
+    #bbf584,
+    #d4f780,
+    #e9f678,
+    #fff573
+  );
+  border: 1px solid black;
 }
-.fav i{
-    padding: 0.5rem;
+.color-choice .color2 {
+  background-image: linear-gradient(
+    to right top,
+    #555df8,
+    #7a3cf5,
+    #ab34fb,
+    #d626fe,
+    #ff00ff
+  );
+  border: 1px solid black;
 }
-.lg{
-    background: rgb(209, 207, 207);
+.color-choice .color3 {
+  background-image: linear-gradient(
+    to right top,
+    #ffc7c7,
+    #f9c8e0,
+    #e4cef6,
+    #c4d7ff,
+    #a5e0ff
+  );
+  border: 1px solid black;
+}
+.stars .far:before,
+.stars .fas:before {
+  color: #bd9758;
+}
+
+.number-of-items {
+  width: 35px;
+  border: 1px solid black;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-btn button {
+  background: black;
+  color: white;
+  letter-spacing: 2px;
+  padding: 1rem;
+  width: 250px;
+}
+.fav {
+  background: rgb(206, 206, 206);
+  border-radius: 50%;
+}
+.fav i {
+  padding: 0.5rem;
+}
+.lg {
+  background: rgb(209, 207, 207);
+}
+
+.delivery-info {
+    color: grey;
+    font-size: 24px;
+}
+
+.accordion {
+    color: grey;
+    font-family: "Metropolis";
+    border-top: 2px solid lightgrey;
+}
+.accordion-item {
+    border: none;
+}
+.accordion-header {
+    border-bottom: 2px solid lightgrey;
+}
+.accordion-body {
+    border-bottom: 2px solid lightgrey;
+}
+.accordion-button {
+    color: grey;
+    font-size: 24px;
+    padding-left: 0;
+    font-weight: 500;
+}
+.accordion-button::after {
+  background-image: url("../assets/svg/plus.svg");
+  margin-right: 40px;
+}
+.accordion-button:not(.collapsed)::after {
+    margin-right: 40px;
+    background-image: url("../assets/svg/minus.svg");
 }
