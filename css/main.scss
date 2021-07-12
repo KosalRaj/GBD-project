@@ -374,12 +374,30 @@ img {
 
   &__img {
     overflow: hidden;
+    position: relative;
 
     & > img {
       width: 100%;
       height: auto;
     }
   }
+
+  &__discount {
+    background: $color__red--bg;
+    text-align: center;
+    position: absolute;
+    padding: 2px 50px;
+    top: 10px;
+    left: -40px;
+    color: $color__white;
+    font-size: 1.25rem;
+    box-shadow: $btn__shadow;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
 
   &__info {
     padding: 24px;
