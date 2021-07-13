@@ -185,19 +185,39 @@ img {
 
 /**=== === === navbar === === ===*/
 .nav {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 .navbar-nav {
   flex-wrap: wrap;
 }
 .nav-item {
   line-height: 50px;
-  padding: 0 40px;
+  padding: 0 30px;
   text-transform: uppercase;
   flex-shrink: 0;
 }
 .nav-item:hover {
   background: #e8e8e8;
+}
+.nav-item .dropdown-menu {
+  width: 500px;
+  padding: 0.625rem 0;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.nav-item .dropdown-item {
+  line-height: 1.5rem;
+  white-space: pre-wrap;
+  text-transform: capitalize;
+}
+.nav-item .dropdown-header {
+  color: #d63031;
+  font-weight: bold;
+  font-size: 1.125rem;
 }
 .nav-link {
   color: #000 !important;
@@ -209,9 +229,7 @@ img {
   letter-spacing: 2px;
 }
 
-/**=== === === carousel === === ===
- * TODO: Add contents, fix indicator
-*/
+/**=== === === carousel === === ===*/
 .carousel-indicators {
   grid-gap: 16px;
 }
@@ -262,34 +280,6 @@ img {
   width: 50%;
   font-size: 1.5rem;
   margin-bottom: 2.625rem;
-}
-.banner__btn {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-  padding: 0.3125em 1.125em;
-  background: #fe2d9d;
-  border: none;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-.banner__btn:hover {
-  transform: scale(1.02);
-  color: white;
-  background: #fe2d9d;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -o-transform: scale(1.02);
-}
-.banner__btn:active {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
 }
 
 .button {
