@@ -5,9 +5,9 @@
 .dark-font .breadcrumb-item.active {
   color: #12aef7;
 }
-.black-text {
-  color: rgb(0, 0, 0);
-}
+
+
+
 .carousel-item {
   height: 550px;
   width: 450px;
@@ -89,6 +89,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1rem;
 }
 .cart-btn button {
   background: black;
@@ -110,7 +111,7 @@
 
 .delivery-info {
     color: grey;
-    font-size: 24px;
+    font-size: 15px;
 }
 
 
@@ -132,22 +133,28 @@
 .fav{
     background: rgb(206, 206, 206);
     border-radius: 50%;
+    margin-left: 1rem;
     
 }
 .fav i{
-    padding: 0.5rem;
+    padding: 1rem;
+    
 }
+
 .lg{
     background: rgb(209, 207, 207);
 }
 
-.heading{
-padding-right: 18rem;
-margin-top: 40px;
+.text-center{
+margin-bottom: 2.25rem;
+margin-right: 4rem;
 }
 .line{
-    border-top: 1px solid #8c8b8b;
+    width: 610px;
+    border-top: 1.75px solid #8c8b8b;
 	border-bottom: 1px solid #fff;
+   margin-left: 2.75rem;
+ margin-top: -2rem;
 }
 
 .accordion {
@@ -166,9 +173,18 @@ margin-top: 40px;
 }
 .accordion-button {
     color: grey;
-    font-size: 24px;
+    font-size: 15px;
     padding-left: 0;
     font-weight: 500;
+    
+}
+
+.accordion-button:focus{
+    outline: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+   background:transparent !important;
+
 }
 .accordion-button::after {
   background-image: url("../assets/svg/plus.svg");
@@ -178,4 +194,54 @@ margin-top: 40px;
     margin-right: 40px;
     background-image: url("../assets/svg/minus.svg");
 
+}
+.fa-star,  .fa-star-half-alt{
+    color:#BD9758;
+ 
+
+}
+.card-body span{ 
+    color: rgb(161, 161, 161);
+  }
+.card {
+    
+    height:450px;
+margin-right: 1rem;
+   
+}
+
+.card-text h5{
+    margin-top: 2rem;
+}
+.card-img-top {
+    height:350px;
+    width:287px;
+  
+}
+.flex-shrink-0{
+    height:400px;
+    width:350px;
+}
+.content{
+    float: right;
+   margin-right: 7rem;
+   margin-top: 8rem;
+}
+
+.straight-line{
+    width: 80rem;
+    border-top: 1.75px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+   margin-left: 9rem;
+ margin-top: 10rem;
+}
+
+
+.col-sm-2 {
+   padding-top: 5rem;
+   width: 300px ;
+}
+
+.featured-product{
+  margin: 0 auto;
 }
