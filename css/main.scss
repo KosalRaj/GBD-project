@@ -31,35 +31,35 @@ img {
   padding: 0;
 }
 
+/**=== === === header === === ===*/
 .navbar {
   padding: 0;
-}
 
-.navbar-brand {
-  max-width: 100px;
+  &-brand {
+    max-width: 100px;
 
-  & > img {
-    width: 100%;
-    height: auto;
+    & > img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
-/**=== === === header === === ===*/
 .header {
   background: $color__grey;
-  height: 100px;
 
   .main-header {
-    height: 100px;
+    min-height: 100px;
   }
 
   &__search-form {
-    max-width: 385px;
     width: 100%;
+    max-width: 385px;
   }
 
   &__search-input {
     @include input();
+    max-width: 385px;
     background: inherit;
     font-family: $text__family--sans-serif;
     font-size: 1rem;
@@ -80,6 +80,7 @@ img {
   &__user-section {
     > div {
       cursor: pointer;
+      padding: 20px 0 20px;
     }
 
     > div:not(:first-child) {
@@ -98,7 +99,7 @@ img {
     padding: 0 2px;
     position: absolute;
     right: -12%;
-    top: -6px;
+    top: 15px;
     border-radius: 4px;
   }
 
@@ -240,6 +241,7 @@ img {
 }
 
 /**=== === === carousel === === ===*/
+
 .carousel-indicators {
   grid-gap: 16px;
 
@@ -268,6 +270,15 @@ img {
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
+
+  @include respond(tablet) {
+    height: 70vw;
+
+    & > img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 .banner {
@@ -288,6 +299,11 @@ img {
     font-weight: bold;
     font-family: $text__family--serif;
     color: white;
+
+    @include respond(laptop) {
+      font-size: 2.5rem;
+      margin-bottom: 0.6rem;
+    }
   }
 
   &__sub-heading {
@@ -295,18 +311,50 @@ img {
     width: 50%;
     font-size: 1.5rem;
     margin-bottom: 2.625rem;
+
+    @include respond(mobile) {
+      font-size: 1rem;
+      width: 80%;
+    }
+
+    @include respond(laptop) {
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+    }
   }
 }
 
 .button {
   @include button();
   text-decoration: none;
+
+  @include respond(mobile) {
+    font-size: 1.2rem;
+  }
+  @include respond(tablet) {
+    font-size: 1.4rem;
+  }
+  @include respond(laptop) {
+    font-size: 1.5rem;
+  }
 }
 
 /**=== === === product sliders === === ===*/
 .product-slider-container {
   margin-top: 140px;
   margin-bottom: 140px;
+
+  @include respond(tablet) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .carousel-inner {
+    @include respond(mobile) {
+      height: 600px;
+      margin-top: 20px;
+    }
+  }
 }
 
 .sale__container {
@@ -321,6 +369,10 @@ img {
   &__heading {
     font-size: 2.5rem;
     font-weight: bold;
+
+    @include respond(tablet) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -358,9 +410,13 @@ img {
 .view-all {
   text-decoration: none;
   color: $color__black;
-  font-size: 24px;
+  font-size: 1.5rem;
   border-bottom: 2px solid $color__black;
   margin-right: 25px;
+
+  @include respond(mobile) {
+    font-size: 1rem;
+  }
 
   &:hover {
     color: inherit;
@@ -471,9 +527,9 @@ img {
 }
 
 /**=== === === For her/him section === === ===*/
-#for-her {
-  background: $color__pink--bg;
 
+#for-her,
+#for-him {
   & > .section-container {
     position: relative;
   }
@@ -485,27 +541,25 @@ img {
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
   }
+}
+
+#for-her {
+  background: $color__pink--bg;
 }
 
 #for-him {
   background: $color__blue--bg;
-
-  & > .section-container {
-    position: relative;
-  }
-
-  & img {
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-  }
 }
+
 .symbol {
   &__gender {
     position: absolute;
     z-index: -1;
+
+    & > svg {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__female {
@@ -521,28 +575,69 @@ img {
 .her,
 .him {
   &__section {
-    // justify-content: space-between;
     padding: 140px 0;
     position: relative;
+
+    @include respond(mobile) {
+      padding: 70px 0;
+    }
   }
 
   &__left-container {
-    padding: 0 70px 0 0;
+    padding-right: 70px;
+
+    @include respond(laptop) {
+      padding-right: 20px;
+    }
+
+    @include respond(tablet) {
+      padding: 20px;
+    }
   }
   &__right-container {
-    padding: 0 0 0 70px;
+    padding-left: 70px;
+
+    @include respond(laptop) {
+      padding-left: 20px;
+    }
+
+    @include respond(tablet) {
+      padding: 20px;
+    }
   }
 }
 .explore {
   &__heading {
     font-size: 5rem;
     font-family: $text__family--serif;
+
+    @include respond(laptop) {
+      font-size: 3rem;
+    }
+
+    @include respond(mobile) {
+      font-size: 2.5rem;
+    }
   }
 
   &__sub-heading {
     font-size: 2rem;
     margin: 48px 0;
     color: $color__darkgrey;
+
+    @include respond(laptop) {
+      font-size: 1.6rem;
+      margin: 36px 0;
+    }
+
+    @include respond(mobile) {
+      font-size: 1.2rem;
+      margin: 24px 0;
+    }
+  }
+
+  @include respond(laptop) {
+    margin: 0 10px 32px;
   }
 }
 
@@ -554,6 +649,10 @@ img {
     padding: 2.5rem 6.25rem;
     gap: 2.5rem;
     align-items: center;
+
+    @include respond(mobile) {
+      padding: 70px 10px;
+    }
   }
 
   &__title {
@@ -561,11 +660,19 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+
+    @include respond(mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__sub-title {
     font-size: 1.25rem;
     text-align: center;
+
+    @include respond(mobile) {
+      font-size: 1.2rem;
+    }
   }
 
   &__form {
@@ -574,11 +681,10 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     width: 650px;
-    // width: 630px;
 
     &-input {
       @include input();
-      width: 410px;
+      width: 400px;
       font-size: 1rem;
       flex: 0 0 410px;
 
@@ -587,6 +693,15 @@ img {
         text-align: center;
         background: url("../assets/svg/mail.svg") no-repeat;
         background-position: 25% 50%;
+
+        @include respond(mobile) {
+          background-position: 20% 50%;
+        }
+      }
+
+      @include respond(mobile) {
+        width: 90%;
+        flex-basis: 100%;
       }
     }
 
@@ -614,6 +729,12 @@ img {
         color: white;
         background: #000;
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      @include respond(mobile) {
+        font-size: 1rem;
+        line-height: 40px;
+        width: 160px;
       }
     }
   }
@@ -665,6 +786,7 @@ img {
 }
 .order-summary {
   font-size: 1.25rem;
+  margin-left: 1rem;
   padding: 0;
   overflow: hidden;
   height: fit-content;
@@ -686,6 +808,10 @@ img {
   &__info {
     padding: 20px 20px;
   }
+
+  @include respond(tablet) {
+    margin: 20px 0;
+  }
 }
 
 .proceed {
@@ -702,10 +828,15 @@ img {
   overflow: hidden;
   box-shadow: $box__shadow;
   border-radius: 12px;
+  margin-right: 20px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
+
+  @include respond(tablet) {
+    margin-right: 0;
+  }
 }
 
 table.table {
@@ -834,4 +965,74 @@ table.table {
 
 .row {
   margin: 0;
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  .button {
+    font-size: 1rem;
+  }
+  .banner {
+    &__heading {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    &__sub-heading {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+  .navbar {
+    padding: 10px;
+
+    &-brand {
+      min-width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+
+      & > img {
+        width: 100px;
+        text-align: center;
+        // margin: 0 auto;
+      }
+    }
+  }
+
+  .header {
+    &__search-form {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__user-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .nav-item > .dropdown-menu {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .footer__content {
+    ul {
+      margin-top: 0;
+    }
+    .row > div:not(:first-child) h3 {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-lg) {
+  .footer__content {
+    & .col-md-3 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }

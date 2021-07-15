@@ -20,6 +20,10 @@ $box__shadow--hover: 0 4px 18px $color__shadow;
 
 $width__max: 1640px;
 
+$breakpoint-sm: 528px;
+$breakpoint-md: 769px;
+$breakpoint-lg: 1533px;
+
 @font-face {
   font-family: 'Metropolis';
   src: url("../assets/fonts/metropolis-regular-webfont.woff") format("woff")
