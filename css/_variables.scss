@@ -9,9 +9,9 @@ $color__yellow--bg-light: rgba(250, 201, 42, 0.15);
 $color__btn--bg: #fe2d9d;
 $color__btn--bg-hover: #fe2d9d;
 $color__ratings: #fac57e;
-$color__pink--bg: rgba(253, 121, 168, .06);
+$color__pink--bg: rgba(253, 121, 168, 0.06);
 $color__blue: #4696e6;
-$color__blue--bg: rgba(116, 185, 255, .06);
+$color__blue--bg: rgba(116, 185, 255, 0.06);
 
 $color__shadow: rgba(0, 0, 0, 0.25);
 
@@ -21,21 +21,21 @@ $box__shadow--hover: 0 4px 18px $color__shadow;
 $width__max: 1640px;
 
 $breakpoint-sm: 528px;
-$breakpoint-md: 769px;
-$breakpoint-lg: 1533px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1532px;
 
 @font-face {
-  font-family: 'Metropolis';
+  font-family: "Metropolis";
   src: url("../assets/fonts/metropolis-regular-webfont.woff") format("woff")
-  url("../assets/fonts/metropolis-regular-webfont.woff2") format("woff2");
+    url("../assets/fonts/metropolis-regular-webfont.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'FogTwoNo5';
-  src: url('../assets/fonts/FogtwoNo5.woff') format('woff'),
-     url('../assets/fonts/FogtwoNo5.woff2') format('woff2');
+  font-family: "FogTwoNo5";
+  src: url("../assets/fonts/FogtwoNo5.woff") format("woff"),
+    url("../assets/fonts/FogtwoNo5.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }

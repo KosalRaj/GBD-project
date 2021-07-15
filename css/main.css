@@ -213,6 +213,11 @@ img {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+@media only screen and (max-width: 528px) {
+  .nav-item .dropdown-menu {
+    border: none;
+  }
+}
 .nav-item .dropdown-item {
   line-height: 1.5rem;
   white-space: pre-wrap;
@@ -264,7 +269,7 @@ img {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .carousel-item {
     height: 70vw;
   }
@@ -272,6 +277,11 @@ img {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media only screen and (max-width: 528px) {
+  .carousel-item {
+    height: 100vw;
   }
 }
 
@@ -292,10 +302,16 @@ img {
   font-family: "FogTwoNo5", serif;
   color: white;
 }
-@media only screen and (max-width: 1533px) {
+@media only screen and (max-width: 1532px) {
   .banner__heading {
     font-size: 2.5rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 528px) {
+  .banner__heading {
+    margin-bottom: 1rem;
+    font-size: 2rem;
   }
 }
 .banner__sub-heading {
@@ -304,16 +320,17 @@ img {
   font-size: 1.5rem;
   margin-bottom: 2.625rem;
 }
+@media only screen and (max-width: 1532px) {
+  .banner__sub-heading {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 @media only screen and (max-width: 528px) {
   .banner__sub-heading {
     font-size: 1rem;
     width: 80%;
-  }
-}
-@media only screen and (max-width: 1533px) {
-  .banner__sub-heading {
-    font-size: 1rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 1.2rem;
   }
 }
 
@@ -346,19 +363,19 @@ img {
 .button:active {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
 }
-@media only screen and (max-width: 528px) {
+@media only screen and (max-width: 1532px) {
   .button {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .button {
     font-size: 1.4rem;
   }
 }
-@media only screen and (max-width: 1533px) {
+@media only screen and (max-width: 528px) {
   .button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -367,7 +384,7 @@ img {
   margin-top: 140px;
   margin-bottom: 140px;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .product-slider-container {
     margin-top: 70px;
     margin-bottom: 70px;
@@ -384,14 +401,22 @@ img {
   margin-bottom: 140px;
 }
 
-.slider__header {
-  margin-bottom: 20px;
+@media only screen and (max-width: 768px) {
+  .slider__header {
+    margin: 20px;
+  }
 }
 .slider__heading {
   font-size: 2.5rem;
   font-weight: bold;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
+  .slider__heading {
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 528px) {
   .slider__heading {
     font-size: 1.5rem;
   }
@@ -447,7 +472,6 @@ img {
 .product__card {
   margin: 10px 20px 25px;
   width: 360px;
-  height: 560px;
   padding: 0;
   overflow: hidden;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
@@ -533,6 +557,9 @@ img {
 }
 #for-her img,
 #for-him img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 16px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
@@ -580,13 +607,13 @@ img {
 .him__left-container {
   padding-right: 70px;
 }
-@media only screen and (max-width: 1533px) {
+@media only screen and (max-width: 1532px) {
   .her__left-container,
 .him__left-container {
     padding-right: 20px;
   }
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .her__left-container,
 .him__left-container {
     padding: 20px;
@@ -596,13 +623,13 @@ img {
 .him__right-container {
   padding-left: 70px;
 }
-@media only screen and (max-width: 1533px) {
+@media only screen and (max-width: 1532px) {
   .her__right-container,
 .him__right-container {
     padding-left: 20px;
   }
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .her__right-container,
 .him__right-container {
     padding: 20px;
@@ -613,7 +640,7 @@ img {
   font-size: 5rem;
   font-family: "FogTwoNo5", serif;
 }
-@media only screen and (max-width: 1533px) {
+@media only screen and (max-width: 1532px) {
   .explore__heading {
     font-size: 3rem;
   }
@@ -628,7 +655,7 @@ img {
   margin: 48px 0;
   color: #6e6e6e;
 }
-@media only screen and (max-width: 1533px) {
+@media only screen and (max-width: 1532px) {
   .explore__sub-heading {
     font-size: 1.6rem;
     margin: 36px 0;
@@ -640,7 +667,7 @@ img {
     margin: 24px 0;
   }
 }
-@media only screen and (max-width: 1533px) {
+@media only screen and (max-width: 1532px) {
   .explore {
     margin: 0 10px 32px;
   }
@@ -652,12 +679,21 @@ img {
 }
 .newsletter__container {
   padding: 2.5rem 6.25rem;
-  gap: 2.5rem;
   align-items: center;
 }
 @media only screen and (max-width: 528px) {
   .newsletter__container {
     padding: 70px 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .newsletter__container {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1532px) {
+  .newsletter__container {
+    gap: 30px;
   }
 }
 .newsletter__title {
@@ -682,10 +718,14 @@ img {
 }
 .newsletter__form {
   display: flex;
-  gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 650px;
+  flex-wrap: nowrap;
+}
+@media only screen and (max-width: 1532px) {
+  .newsletter__form {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 .newsletter__form-input {
   border: none;
@@ -733,6 +773,7 @@ img {
   }
 }
 .newsletter__form-btn {
+  margin-left: 20px;
   font-size: 1.25rem;
   text-transform: uppercase;
   border: none;
@@ -769,6 +810,12 @@ img {
 .footer__content ul {
   padding-left: 0;
   margin: 20px 0 0;
+}
+@media only screen and (max-width: 768px) {
+  .footer__content ul {
+    margin-top: 0;
+    margin-left: 20px;
+  }
 }
 .footer__content li {
   list-style: none;
@@ -824,7 +871,7 @@ img {
 .order-summary__info {
   padding: 20px 20px;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .order-summary {
     margin: 20px 0;
   }
@@ -874,7 +921,7 @@ img {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .bag-items {
     margin-right: 0;
   }
@@ -993,19 +1040,6 @@ table.table tbody tr td {
 }
 
 @media only screen and (max-width: 528px) {
-  .button {
-    font-size: 1rem;
-  }
-
-  .banner__heading {
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-  }
-  .banner__sub-heading {
-    font-size: 1rem;
-    margin-bottom: 1.2rem;
-  }
-
   .navbar {
     padding: 10px;
   }
@@ -1033,18 +1067,26 @@ table.table tbody tr td {
   .nav-item > .dropdown-menu {
     width: 80vw;
   }
-}
-@media only screen and (max-width: 769px) {
-  .footer__content ul {
-    margin-top: 0;
+
+  .bag .dropdown-menu {
+    width: 90vw;
+    position: absolute;
+    right: -80px;
   }
+}
+@media only screen and (max-width: 768px) {
   .footer__content .row > div:not(:first-child) h3 {
     margin-top: 1.5rem;
   }
 }
-@media only screen and (max-width: 1533px) {
+@media only screen and (max-width: 1532px) {
   .footer__content .col-md-3 {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .newsletter__form-btn {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=main.css.map */
