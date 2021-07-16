@@ -196,7 +196,6 @@ img {
   flex-wrap: wrap;
 }
 .nav-item {
-  line-height: 50px;
   padding: 0 30px;
   text-transform: uppercase;
   flex-shrink: 0;
@@ -233,12 +232,17 @@ img {
 }
 .nav-link {
   color: #000 !important;
+  line-height: 50px;
+  padding: 0;
 }
 .nav-link > .sale {
   color: #d63031;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 50px;
   font-weight: 800;
   letter-spacing: 2px;
+  display: flex;
+  align-items: center;
 }
 
 /**=== === === carousel === === ===*/
@@ -839,6 +843,16 @@ img {
   text-align: center;
   color: white;
   padding: 2rem 0;
+}
+
+/*=== === === Breadcrumbs === === ===*/
+.breadcrumb {
+  line-height: 80px;
+  justify-content: center;
+  font-size: 1.125rem;
+}
+.breadcrumb-item.active {
+  color: #000;
 }
 
 /**=== === === Order summary === === ===*/

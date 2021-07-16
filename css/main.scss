@@ -192,7 +192,7 @@ img {
   }
 
   &-item {
-    line-height: 50px;
+    // line-height: 50px;
     padding: 0 30px;
     text-transform: uppercase;
     flex-shrink: 0;
@@ -233,12 +233,17 @@ img {
 
   &-link {
     color: $color__black !important;
+    line-height: 50px;
+    padding: 0;
 
     & > .sale {
       color: $color__red--fg;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
+      line-height: 50px;
       font-weight: 800;
       letter-spacing: 2px;
+      display: flex;
+      align-items: center;
     }
   }
 }
@@ -815,6 +820,17 @@ img {
   text-align: center;
   color: white;
   padding: 2rem 0;
+}
+
+/*=== === === Breadcrumbs === === ===*/
+.breadcrumb {
+  line-height: 80px;
+  justify-content: center;
+  font-size: 1.125rem;
+  
+  &-item.active {
+    color: $color__black;
+  }
 }
 
 /**=== === === Order summary === === ===*/
