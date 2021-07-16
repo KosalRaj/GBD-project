@@ -246,6 +246,12 @@ img {
       align-items: center;
     }
   }
+
+  @media only screen and (min-width: 528px) and (max-width: 999px) {
+    .navbar-light .navbar-toggler {
+      margin: 8px 0;
+    }
+  }
 }
 
 /**=== === === carousel === === ===*/
@@ -603,7 +609,7 @@ img {
     padding: 140px 0;
     position: relative;
 
-    @include respond(mobile) {
+    @include respond(tablet) {
       padding: 70px 0;
     }
   }
@@ -827,7 +833,8 @@ img {
   line-height: 80px;
   justify-content: center;
   font-size: 1.125rem;
-  
+  margin: 0;
+
   &-item.active {
     color: $color__black;
   }
@@ -835,7 +842,7 @@ img {
 
 /**=== === === Order summary === === ===*/
 .section-heading {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 .order-summary {
   font-size: 1.25rem;
@@ -906,6 +913,7 @@ table.table {
     tr {
       td {
         padding: 20px 10px;
+        white-space: nowrap;
       }
     }
   }
@@ -913,6 +921,10 @@ table.table {
 
 .item {
   padding: 0 10px;
+
+  @include respond(mobile) {
+    padding: 0;
+  };
 
   &__img {
     padding: 0;
@@ -936,6 +948,15 @@ table.table {
 
   &__description {
     color: $color__darkgrey;
+  }
+
+  &__option {
+    gap: 1.5rem;
+
+    @include respond(mobile) {
+      gap: 4px;
+      justify-content: end;
+    };
   }
 
   &__remove,
@@ -1083,5 +1104,69 @@ table.table {
 @media only screen and (max-width: 920px) {
   .newsletter__form-btn {
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin: 0 1rem 1rem 1rem;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td > * {
+    margin-top: 20px;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 0;
+    width: 45%;
+    padding: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  /*
+		Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+		*/
+  td:nth-of-type(1):before {
+    content: "Product";
+  }
+  td:nth-of-type(2):before {
+    content: "Price";
+  }
+  td:nth-of-type(3):before {
+    content: "Quantity";
+  }
+  td:nth-of-type(4):before {
+    content: "Total price";
   }
 }
