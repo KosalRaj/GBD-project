@@ -88,7 +88,7 @@ color: lightsalmon !important;
 }
 .stars .far:before,
 .stars .fas:before {
-  color: #bd9758;
+  color: #fac57e;
 }
 
 .number-of-items {
@@ -205,46 +205,60 @@ margin-right: 4rem;
 
 }
 .fa-star,  .fa-star-half-alt{
-    color:#BD9758;
+    color: #fac57e;
  
 
 }
-.card-body span{ 
-    color: rgb(161, 161, 161);
-  }
+
 .card {
-    
-    height:450px;
+    height:490px;
 margin-right: 1rem;
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+cursor: pointer;
+   border-radius: 12px;
    
+  transition: all 0.2s;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 
-.card-text h5{
-    margin-top: 2rem;
+
+.card:hover{
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
+
+.card:hover img{
+  transition: transform 0.3s;
+  transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+
+}
+
+
 .card-img-top {
-    height:350px;
+    height:400px;
     width:287px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   
 }
 .flex-shrink-0{
+
     height:400px;
     width:350px;
 }
-/* .content{
-    float: right;
-   margin-right: 7rem;
-   margin-top: 8rem;
-} */
 
-/* .straight-line{
-    width: 85rem;
-    border-top: 1.75px solid #8c8b8b;
-	border-bottom: 1px solid #fff;
-   margin-left: 5rem;
- margin-top: 10rem;
-
-} */
 
 .rounded>div{
 
@@ -260,22 +274,5 @@ width: 300px;
  }
 
  .feature{
-   background: rgb(168, 168, 168);
- }
- .custom-btn{
-   position: relative;
- }
- .custom{
-   background: rgb(204, 10, 204);
-   padding:0.5rem 1rem;
-   position: absolute;
-   bottom: -10%;
-  left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 16px;
-   font-weight: 500;
-   color: white;
-  border: 0 !important;
-  border-radius: 8px;
- 
+   background: rgb(236, 236, 236);
  }

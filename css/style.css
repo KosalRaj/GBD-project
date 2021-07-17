@@ -12,100 +12,33 @@
 body{
     background-color: rgb(255, 255, 255);
 }
-  .breadcrumb ul {
-    display: flex;
-    font-size: 18px;
-    justify-content: center;
-    border-top: 2px solid rgb(151, 146, 146);
-    border-bottom:2px solid rgb(151, 151, 151);
-    padding: 10px 16px;
-    list-style: none;
-    background-color: white;
-    
-
-  }
-  .breadcrumb ul li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-  }
-  .breadcrumb ul li a {
-    color: #a1a1a1;
-    text-decoration: none;
-  }
-  .breadcrumb ul li a:hover {
-    color: #ff00ea;
-    text-decoration:none;
-  }
-
-   
-  .menu {
-  
-    background-color: rgb(255, 255, 255);
-    height: 50px;
-    width: 100%;
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
-    padding:0 5%;
-    margin-top: 5%;
-    padding-left: 17%;
-  }
-  .menu ul {
-list-style: none;
-display: flex;
-
-  }
-  
-  .menu ul li {
-   padding: 10px 30px;
-   position: relative;
-  
-  }
-
-  .menu ul li a {
-      color:rgb(0, 0, 0);
-      text-decoration: none;
-      font-size: 15px;
-      
-
-      transition: all 0.3s;
-    
-  }
-
-  .menu ul li a:hover{
-      color:rgb(239, 19, 247);
-      
-  }
-
-.dropdown__content{
-    display: none;
-    box-shadow: 0 2px 4px 0 rgba(65, 65, 65, 0.2), 0 6px 20px 0 rgba(112, 112, 112, 0.19);
-    cursor:pointer;
-    
-    
-   
-
+.dark-font .breadcrumb-item + .breadcrumb-item::before {
+  color: rgb(0, 0, 0);
+}
+.dark-font .breadcrumb-item.active {
+  color: #12aef7;
 }
 
-  
- .menu ul li:hover .dropdown__content{
-      display: block;
-      position: absolute;
-      left: 0;
-      top:100%;
-      background-color: rgba(255, 255, 255, 0.75);
-      z-index: 50;
-  }
+.bread {
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+}
+ .breadcrumb-item a{
+text-decoration: none !important;
+color: salmon !important;
+}
 
-  .menu ul li:hover .dropdown__content ul{
-      display: block;
-      margin:20px;
-  }
-  
-  .menu ul li:hover .dropdown__content ul li {
-      width: 150px;
-      padding:10px;
-  }
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color: salmon!important;
+}
+.stars .far:before,
+.stars .fas:before {
+  color: #fac57e;
+}
 
- 
+
+.fa-star,  .fa-star-half-alt{
+  color: #fac57e;
+
+
+}
