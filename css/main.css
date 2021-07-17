@@ -820,12 +820,6 @@ img {
   padding-left: 0;
   margin: 20px 0 0;
 }
-@media only screen and (max-width: 768px) {
-  .footer__content ul {
-    margin-top: 0;
-    margin-left: 20px;
-  }
-}
 .footer__content li {
   list-style: none;
   line-height: 36px;
@@ -1107,11 +1101,6 @@ table.table tbody tr td {
     width: 90vw;
     position: absolute;
     right: -80px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .footer__content .row > div:not(:first-child) h3 {
-    margin-top: 1.5rem;
   }
 }
 @media only screen and (max-width: 1532px) {

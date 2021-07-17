@@ -793,11 +793,6 @@ img {
   ul {
     padding-left: 0;
     margin: 20px 0 0;
-
-    @include respond(tablet) {
-      margin-top: 0;
-      margin-left: 20px;
-    }
   }
 
   & li {
@@ -1084,13 +1079,13 @@ table.table {
   }
 }
 
-@media only screen and (max-width: $breakpoint-md) {
-  .footer__content {
-    .row > div:not(:first-child) h3 {
-      margin-top: 1.5rem;
-    }
-  }
-}
+// @media only screen and (max-width: $breakpoint-md) {
+//   .footer__content {
+//     .row > div:not(:first-child) h3 {
+//       margin-top: 1.5rem;
+//     }
+//   }
+// }
 
 @media only screen and (max-width: $breakpoint-lg) {
   .footer__content {
