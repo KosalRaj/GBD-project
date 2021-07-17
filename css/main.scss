@@ -1079,14 +1079,6 @@ table.table {
   }
 }
 
-// @media only screen and (max-width: $breakpoint-md) {
-//   .footer__content {
-//     .row > div:not(:first-child) h3 {
-//       margin-top: 1.5rem;
-//     }
-//   }
-// }
-
 @media only screen and (max-width: $breakpoint-lg) {
   .footer__content {
     & .col-md-3 {
