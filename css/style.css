@@ -46,7 +46,7 @@ color: salmon !important;
 }
 
 .card {
-  height:490px;
+  height:495px;
 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 cursor: pointer;
  border-radius: 12px;
@@ -76,7 +76,7 @@ cursor: pointer;
 
 
 .card-img-top {
-    height:400px;
+    height:395px;
     width:100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -103,3 +103,35 @@ cursor: pointer;
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
+
+.card{
+  position: relative;
+  z-index: 25;
+}
+ .view-btn {
+   position: absolute;
+   bottom: 15%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: rgb(255, 255, 255,0.6);
+   border: none;
+   border-radius: 5px;
+   padding: 1rem;
+   cursor: pointer; 
+   z-index: 30;
+   transition:ease-in .5s ;
+   display: none;
+ }
+.view-btn:hover{
+   background: rgb(255, 255, 255,0.8);
+   
+ }
+ .view-btn:hover img{
+   filter: blur(8px);
+   -webkit-filter: blur(8px);
+   
+ }
+ .card:hover .view-btn{
+   display: flex !important;
+
+ }
