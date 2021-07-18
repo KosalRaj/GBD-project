@@ -1036,7 +1036,7 @@ table.table {
   margin: 0;
 }
 
-@media only screen and (max-width: $breakpoint-sm) {
+@include respond(mobile) {
   .navbar {
     padding: 10px;
 
@@ -1079,7 +1079,7 @@ table.table {
   }
 }
 
-@media only screen and (max-width: $breakpoint-lg) {
+@include respond(laptop) {
   .footer__content {
     & .col-md-3 {
       padding-left: 20px;
@@ -1094,7 +1094,7 @@ table.table {
   }
 }
 
-@media only screen and (max-width: 528px) {
+@include respond(mobile) {
   /* Force table to not be like tables anymore */
   table,
   thead,

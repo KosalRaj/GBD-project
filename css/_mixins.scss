@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'sass:map';
 
 @mixin input() {
   border: none;
@@ -43,24 +44,10 @@
   }
 }
 
-@mixin respond($breakpoint) {
-  // $breakpoint is simply a variable that can have several values
+@mixin respond($key) {
+  $size: map.get($breakpoints, $key);
 
-  @if $breakpoint==tablet {
-    @media only screen and (max-width: $breakpoint-md) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==mobile {
-    @media only screen and (max-width: $breakpoint-sm) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==laptop {
-    @media only screen and (max-width: $breakpoint-lg) {
-      @content;
-    }
+  @media only screen and (max-width: $size) {
+    @content;
   }
 }
