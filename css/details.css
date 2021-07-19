@@ -10,12 +10,10 @@
   border-bottom: 1px solid gray;
   border-top: 1px solid gray;
 }
-a{
-text-decoration: none !important;
-color: lightsalmon !important;
+a {
+  text-decoration: none !important;
+  color: lightsalmon !important;
 }
-
-
 
 .carousel-item {
   height: 550px;
@@ -119,59 +117,55 @@ color: lightsalmon !important;
 }
 
 .delivery-info {
-    color: grey;
-    font-size: 20px;
+  color: grey;
+  font-size: 20px;
 }
 
 .accordion {
-    color: grey;
-    font-family: "Metropolis";
-    border-top: 2px solid lightgrey;
+  color: grey;
+  font-family: "Metropolis";
+  border-top: 2px solid lightgrey;
 }
 .accordion-item {
-    border: none;
+  border: none;
 }
 .accordion-header {
-    border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
 }
 .accordion-body {
-    border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
 }
 .accordion-button {
-    color: grey;
-    font-size: 20px;
-    padding-left: 0;
-    font-weight: 500;
-    
+  color: grey;
+  font-size: 20px;
+  padding-left: 0;
+  font-weight: 500;
 }
 
-.accordion-button:focus{
-    outline: none !important;
-    border: 0 !important;
-    box-shadow: none !important;
-   background:transparent !important;
-
+.accordion-button:focus {
+  outline: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
 }
 .accordion-button::after {
   background-image: url("../assets/svg/plus.svg");
   margin-right: 40px;
 }
 .accordion-button:not(.collapsed)::after {
-    margin-right: 40px;
-    background-image: url("../assets/svg/minus.svg");
-
+  margin-right: 40px;
+  background-image: url("../assets/svg/minus.svg");
 }
-.fa-star,  .fa-star-half-alt{
-    color: #fac57e;
- 
-
+.fa-star,
+.fa-star-half-alt {
+  color: #fac57e;
 }
 
 .card {
-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-cursor: pointer;
-   border-radius: 12px;
-   
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border-radius: 12px;
+
   transition: all 0.2s;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -183,96 +177,89 @@ cursor: pointer;
   -o-transition: all 0.2s;
 }
 
-
-.card:hover{
+.card:hover {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card:hover img{
+.card:hover img {
   transition: transform 0.3s;
-  transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  -o-transform: scale(1.0);
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
   -webkit-transition: transform 0.3s;
   -moz-transition: transform 0.3s;
   -ms-transition: transform 0.3s;
   -o-transition: transform 0.3s;
-
 }
-
 
 .card-img-top {
-    height:400px;
-    width:100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-  
-}
-.flex-shrink-0{
-
-    height:400px;
-    width:350px;
-}
-
-
-
- .rounded>div>img{
-   height: 100%;
-   width: 100%;
-   object-fit: contain;
-  border-radius: 12px;
- }
-
- .feature{
-   background: rgb(236, 236, 236);
- }
-
-@media (max-width:1200px){
-  #carouselExampleControls {
-    width: auto;
-}
-.carousel-item{
+  height: 400px;
   width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
+.flex-shrink-0 {
+  height: 400px;
+  width: 350px;
 }
-@media (max-width:992px){
-  .vertical-img{
-    flex-direction: row !important;
-    width: 100% !important;
-    margin-bottom: 2rem;
-  }
-  .fa-chevron-up,.fa-chevron-down{
-    transform: rotate(-90deg);
-  } 
-  #carouselExampleControls{
+
+.rounded > div > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.feature {
+  background: rgb(236, 236, 236);
+}
+
+@media (max-width: 1200px) {
+  #carouselExampleControls {
     width: auto;
   }
   .carousel-item {
     width: 100%;
-}
-  
-}
-
-@media (max-width:768px){
-  .right-info{
-    margin-top: 1rem;
   }
-  .size{
-    margin-top: 1rem;
+}
+@media (max-width: 992px) {
+  .vertical-img {
+    flex-direction: row !important;
+    width: 100% !important;
+    margin-bottom: 2rem;
   }
-  .line{
+  .fa-chevron-up,
+  .fa-chevron-down {
+    transform: rotate(-90deg);
+  }
+  #carouselExampleControls {
+    width: auto;
+  }
+  .carousel-item {
     width: 100%;
   }
 }
-@media (max-width:436px){
-  .vertical-img{
+
+@media (max-width: 768px) {
+  .right-info {
+    margin-top: 1rem;
+  }
+  .size {
+    margin-top: 1rem;
+  }
+  .line {
+    width: 100%;
+  }
+}
+@media (max-width: 436px) {
+  .vertical-img {
     margin-bottom: 0;
   }
 }
-@media (max-width:360px){
+@media (max-width: 360px) {
   .vertical-img img {
     width: 75px;
     height: auto;
     object-fit: contain;
-}
+  }
 }

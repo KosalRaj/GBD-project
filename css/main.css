@@ -1,12 +1,14 @@
 @font-face {
   font-family: "Metropolis";
-  src: url("../assets/fonts/metropolis-regular-webfont.woff") format("woff") url("../assets/fonts/metropolis-regular-webfont.woff2") format("woff2");
+  src: url("../assets/fonts/metropolis-regular-webfont.woff") format("woff")
+    url("../assets/fonts/metropolis-regular-webfont.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "FogTwoNo5";
-  src: url("../assets/fonts/FogtwoNo5.woff") format("woff"), url("../assets/fonts/FogtwoNo5.woff2") format("woff2");
+  src: url("../assets/fonts/FogtwoNo5.woff") format("woff"),
+    url("../assets/fonts/FogtwoNo5.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
@@ -144,7 +146,7 @@ img {
 }
 .bag-item-sm__img {
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   width: 75px;
 }
 .bag-item-sm__info {
@@ -285,7 +287,7 @@ img {
   .carousel-item > img {
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media only screen and (max-width: 528px) {
@@ -568,7 +570,7 @@ img {
 #for-him img {
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 16px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
@@ -608,7 +610,7 @@ img {
 }
 @media only screen and (max-width: 768px) {
   .her__section,
-.him__section {
+  .him__section {
     padding: 70px 0;
   }
 }
@@ -618,13 +620,13 @@ img {
 }
 @media only screen and (max-width: 1532px) {
   .her__left-container,
-.him__left-container {
+  .him__left-container {
     padding-right: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
   .her__left-container,
-.him__left-container {
+  .him__left-container {
     padding: 20px;
   }
 }
@@ -634,13 +636,13 @@ img {
 }
 @media only screen and (max-width: 1532px) {
   .her__right-container,
-.him__right-container {
+  .him__right-container {
     padding-left: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
   .her__right-container,
-.him__right-container {
+  .him__right-container {
     padding: 20px;
   }
 }
@@ -992,7 +994,8 @@ table.table tbody tr td {
     justify-content: end;
   }
 }
-.item__remove, .item__to-wishlist {
+.item__remove,
+.item__to-wishlist {
   cursor: pointer;
   border: 1px solid #e8e8e8;
   padding: 6px 10px;
@@ -1002,7 +1005,8 @@ table.table tbody tr td {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
-.item__remove:active, .item__to-wishlist:active {
+.item__remove:active,
+.item__to-wishlist:active {
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
@@ -1117,11 +1121,11 @@ table.table tbody tr td {
 @media only screen and (max-width: 528px) {
   /* Force table to not be like tables anymore */
   table,
-thead,
-tbody,
-th,
-td,
-tr {
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
     display: block;
   }
 
@@ -1179,4 +1183,4 @@ tr {
   td:nth-of-type(4):before {
     content: "Total price";
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

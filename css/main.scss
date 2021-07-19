@@ -919,7 +919,7 @@ table.table {
 
   @include respond(mobile) {
     padding: 0;
-  };
+  }
 
   &__img {
     padding: 0;
@@ -951,7 +951,7 @@ table.table {
     @include respond(mobile) {
       gap: 4px;
       justify-content: end;
-    };
+    }
   }
 
   &__remove,
