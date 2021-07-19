@@ -120,44 +120,7 @@ color: lightsalmon !important;
 
 .delivery-info {
     color: grey;
-    font-size: 15px;
-}
-
-
-.number-of-items{
-    width: 35px;
-    border: 1px solid black;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cart-btn button{
-    background: black;
-    color: white;
-    letter-spacing: 2px;
-    padding: 1rem;
-    width: 250px;
-}
-.fav{
-    background: rgb(206, 206, 206);
-    border-radius: 50%;
-    margin-left: 1rem;
-    
-}
-.fav i{
-    padding: 1rem;
-    
-}
-
-.lg{
-    background: rgb(209, 207, 207);
-}
-
-.line{
-    width: 610px;
-    border-top: 1.75px solid #8c8b8b;
-	border-bottom: 1px solid #fff;
+    font-size: 20px;
 }
 
 .accordion {
@@ -176,7 +139,7 @@ color: lightsalmon !important;
 }
 .accordion-button {
     color: grey;
-    font-size: 15px;
+    font-size: 20px;
     padding-left: 0;
     font-weight: 500;
     
