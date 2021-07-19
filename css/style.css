@@ -1,0 +1,141 @@
+@import url('http://fonts.cdnfonts.com/css/metropolis-2?styles=21180,21184,21188,21176');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Metropolis', sans-serif;
+}
+
+del{
+  color: grey;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+a{
+  text-decoration: none !important;
+  color: black !important;
+}
+.dark-font .breadcrumb-item + .breadcrumb-item::before {
+  color: rgb(0, 0, 0);
+}
+.dark-font .breadcrumb-item.active {
+  color: #12aef7;
+}
+
+.bread {
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+}
+ .breadcrumb-item a{
+text-decoration: none !important;
+color: salmon !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color: salmon!important;
+}
+.stars .far:before,
+.stars .fas:before {
+  color: #fac57e;
+}
+
+
+.fa-star,  .fa-star-half-alt{
+  color: #fac57e;
+
+
+}
+
+.card {
+  height:495px;
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+cursor: pointer;
+ border-radius: 12px;
+}
+.card-body{
+  padding: 0.75rem !important;
+}
+.card:hover{
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+.dropdown-menu{
+  background: white !important;
+  opacity: 0.9 !important;
+  border: none !important;
+}
+.card:hover img{
+  transition: transform 0.3s;
+  transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+
+}
+
+
+.card-img-top {
+    height:395px;
+    width:100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  
+}
+
+.end{
+  text-align: center;
+  margin: 1rem 0;
+ 
+}
+.end button{
+  font-size: 18px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+  
+}
+.end:hover button{
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.card{
+  position: relative;
+  z-index: 25;
+}
+ .view-btn {
+   position: absolute;
+   bottom: 15%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: rgb(255, 255, 255,0.6);
+   border: none;
+   border-radius: 5px;
+   padding: 1rem;
+   cursor: pointer; 
+   z-index: 30;
+   transition:ease-in .5s ;
+   display: none;
+ }
+.view-btn:hover{
+   background: rgb(255, 255, 255,0.8);
+   
+ }
+ .view-btn:hover img{
+   filter: blur(8px);
+   -webkit-filter: blur(8px);
+   
+ }
+ .card:hover .view-btn{
+   display: flex !important;
+
+ }

@@ -1,0 +1,132 @@
+@import url("http://fonts.cdnfonts.com/css/metropolis-2?styles=21180,21184,21188,21176");
+        
+body{
+        background-color: rgb(255, 255, 255);
+        font-family: 'Metropolis', sans-serif;
+        font-weight: 300;
+    }
+    .progresses {
+        position: relative;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .progresses ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .progresses ul li {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #4696e6;
+        z-index: 200;
+        position: relative;
+    }
+
+    .progresses .gray{
+        background-color: #a8a8a8;
+    }
+    
+    .progresses ul li.green {
+        color: #000000;
+        background-color: #4696e6;
+    }
+    
+    .progresses ul li::after { 
+        position: absolute;
+        top: 35px;
+    left: -8px;
+    font-size: 1rem;
+    width: 150px;
+    font-weight: 500;
+    }
+   
+#step-1::after {
+    content: "Login"
+   
+}
+
+#step-2::after {
+    content: "Shipping";
+    left: -5px;
+}
+
+#step-3::after {
+    content: "Payment Method"
+   
+}
+
+#step-4::after {
+    content: "Order Confirmation"
+
+   
+}
+.progresses .progress {
+    height: 0.8rem;
+    width: 100%;
+    top: 33px;
+    position: absolute;
+    background-color: #a8a8a8;
+    border-radius: 10px;
+}
+.progress-bar{
+    background-color: #4696e6;
+   
+    
+}
+.fa-check {
+color: #fff;
+    position: absolute;
+   top:15px;
+   left:15px;
+   transform: translate(-50%, -50%);
+    
+}
+
+.form-check{
+    margin-left: 2.75rem !important;
+}
+
+
+
+.form-control, .form-select{
+    height: 60px;
+  border-radius: 0%;
+}
+.form-check-input:checked{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.submit{
+    border-radius:0% !important;
+    background-color:#4696e6;
+    color: black;
+}
+.voucher{
+    border-radius: 0% !important;
+    background-color: black;
+    color: white;
+}
+.fw-500 {
+    font-weight: 400;
+}
+
+
+
+.bg-pay{
+    background-color: #dfdfdf;
+}
+
+.image{
+    margin-left: 1rem;
+}
+.border-box{
+    border:3px solid #4696e6;
+}
+
+.product-title{
+    margin-left: 1rem;
+}
