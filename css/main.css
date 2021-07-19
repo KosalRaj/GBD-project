@@ -222,7 +222,7 @@ header .nav-item .dropdown-item {
   white-space: pre-wrap;
   text-transform: capitalize;
 }
-header .nav-item .dropdown-item:active {
+header .nav-item .dropdown-item:hover, header .nav-item .dropdown-item:focus, header .nav-item .dropdown-item:active {
   background: #e8e8e8;
   color: #000;
 }

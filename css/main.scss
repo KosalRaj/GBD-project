@@ -219,6 +219,8 @@ header .nav {
       white-space: pre-wrap;
       text-transform: capitalize;
 
+      &:hover,
+      &:focus,
       &:active {
         background: $color__grey;
         color: $color__black;

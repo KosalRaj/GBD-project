@@ -26,17 +26,17 @@ a {
 }
 
 .bread {
-  border-bottom: 1px solid gray;
-  border-top: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
+  /* border-top: 1px solid gray; */
 }
 .breadcrumb-item a {
   text-decoration: none !important;
   color: salmon !important;
 }
 
-.dropdown-item:focus,
-.dropdown-item:hover {
-  background-color: salmon !important;
+.filter .dropdown-item:focus,
+.filter .dropdown-item:hover {
+  background-color: salmon;
 }
 .stars .far:before,
 .stars .fas:before {
@@ -60,10 +60,10 @@ a {
 .card:hover {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
-.dropdown-menu {
-  background: white !important;
-  opacity: 0.9 !important;
-  border: none !important;
+.filter .dropdown-menu {
+  background: white;
+  opacity: 0.9;
+  border: none;
 }
 .card:hover img {
   transition: transform 0.3s;
@@ -104,7 +104,7 @@ a {
 
 .card {
   position: relative;
-  z-index: 25;
+  z-index: 0;
 }
 .view-btn {
   position: absolute;
