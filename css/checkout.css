@@ -79,7 +79,7 @@ body {
 }
 
 .form-check {
-  margin-left: 2.75rem !important;
+  margin-left: calc(var(--bs-gutter-x) * .5) !important;
 }
 
 .form-control,
@@ -93,14 +93,68 @@ body {
 }
 
 .submit {
-  border-radius: 0% !important;
-  background-color: #4696e6;
-  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  padding: 0.9375em 2em;
+  background: #4696e6;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  text-decoration: none;
+}
+.submit:hover {
+  transform: scale(1.02);
+  color: white;
+  background: #1e7ddc;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.submit:active {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
 }
 .voucher {
-  border-radius: 0% !important;
-  background-color: black;
+  font-size: 1.125rem;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  padding: 0.5em 1.125em;
+  background: #000;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  text-decoration: none;
+}
+.voucher:hover {
+  transform: scale(1.02);
   color: white;
+  background: #1e7ddc;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.voucher:active {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.voucher-input {
+  border: 0;
+  width: 78%;
+  height: 100%;
 }
 .fw-500 {
   font-weight: 400;
