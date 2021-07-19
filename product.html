@@ -14,6 +14,7 @@
   <link href="http://fonts.cdnfonts.com/css/metropolis-2?styles=21180,21184,21188,21176" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/details.css">
+  <link rel="stylesheet" href="./css/main.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -22,6 +23,384 @@
 </head>
 
 <body>
+  <header>
+    <div class="header">
+      <div class="section-container">
+        <div class="navbar navbar-light main-header">
+          <a href="./index.html" class="navbar-brand">
+            <img src="./assets/img/logo.png" alt="logo">
+          </a>
+  
+          <form action="#" class="header__search-form">
+            <input type="search" placeholder="Find products" class="header__search-input">
+          </form>
+  
+          <div class="header__user-section d-flex">
+            <div class="wishlist">
+              <img src="./assets/svg/heart.svg" alt="">
+            </div>
+            <div class="user-account">
+              <img src="./assets/svg/user.svg" alt="">
+            </div>
+            <div class="bag">
+              <a id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./assets/svg/shopping-bag.svg" alt="">
+              </a>
+              <span class="bag__count">20</span>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <div class="bag-item-sm__remove">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32"
+                      height="32" viewBox="0 0 32 32">
+                      <defs>
+                        <style>
+                          .a {
+                            fill: #e87e7e;
+                          }
+  
+                          .b {
+                            filter: url(#a);
+                          }
+                        </style>
+                        <filter id="a" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse">
+                          <feOffset dy="2" input="SourceAlpha" />
+                          <feGaussianBlur stdDeviation="2" result="b" />
+                          <feFlood flood-opacity="0.102" />
+                          <feComposite operator="in" in2="b" />
+                          <feComposite in="SourceGraphic" />
+                        </filter>
+                      </defs>
+                      <g class="b" transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <path class="a"
+                          d="M11.25,1.25a10,10,0,1,0,10,10A10,10,0,0,0,11.25,1.25ZM15,12.188H7.5a.938.938,0,0,1,0-1.875H15a.938.938,0,0,1,0,1.875Z"
+                          transform="translate(4.75 2.75)" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="bag-item-sm d-flex">
+                    <div class="bag-item-sm__img">
+                      <img src="./assets/img/item-1.png" alt="">
+                    </div>
+                    <div class="bag-item-sm__info d-flex justify-content-between align-items-center">
+                      <div class="bag-item-sm__detail">
+                        <div class="bag-item-sm__title">Item Title</div>
+                        <div class="bag-item-sm__description">
+                          <div class="bag-item-sm__size">Size : M</div>
+                          <div class="bag-item-sm__color">Color : Red</div>
+                        </div>
+                      </div>
+                      <div class="bag-item-sm__price">Rs. 2340</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="bag-item-sm__remove">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32"
+                      height="32" viewBox="0 0 32 32">
+                      <defs>
+                        <style>
+                          .a {
+                            fill: #e87e7e;
+                          }
+  
+                          .b {
+                            filter: url(#a);
+                          }
+                        </style>
+                        <filter id="a" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse">
+                          <feOffset dy="2" input="SourceAlpha" />
+                          <feGaussianBlur stdDeviation="2" result="b" />
+                          <feFlood flood-opacity="0.102" />
+                          <feComposite operator="in" in2="b" />
+                          <feComposite in="SourceGraphic" />
+                        </filter>
+                      </defs>
+                      <g class="b" transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <path class="a"
+                          d="M11.25,1.25a10,10,0,1,0,10,10A10,10,0,0,0,11.25,1.25ZM15,12.188H7.5a.938.938,0,0,1,0-1.875H15a.938.938,0,0,1,0,1.875Z"
+                          transform="translate(4.75 2.75)" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="bag-item-sm d-flex">
+                    <div class="bag-item-sm__img">
+                      <img src="./assets/img/item-1.png" alt="">
+                    </div>
+                    <div class="bag-item-sm__info d-flex justify-content-between align-items-center">
+                      <div class="bag-item-sm__detail">
+                        <div class="bag-item-sm__title">Item Title</div>
+                        <div class="bag-item-sm__description">
+                          <div class="bag-item-sm__size">Size : M</div>
+                          <div class="bag-item-sm__color">Color : Red</div>
+                        </div>
+                      </div>
+                      <div class="bag-item-sm__price">Rs. 2340</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="bag-item-sm__remove">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32"
+                      height="32" viewBox="0 0 32 32">
+                      <defs>
+                        <style>
+                          .a {
+                            fill: #e87e7e;
+                          }
+  
+                          .b {
+                            filter: url(#a);
+                          }
+                        </style>
+                        <filter id="a" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse">
+                          <feOffset dy="2" input="SourceAlpha" />
+                          <feGaussianBlur stdDeviation="2" result="b" />
+                          <feFlood flood-opacity="0.102" />
+                          <feComposite operator="in" in2="b" />
+                          <feComposite in="SourceGraphic" />
+                        </filter>
+                      </defs>
+                      <g class="b" transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <path class="a"
+                          d="M11.25,1.25a10,10,0,1,0,10,10A10,10,0,0,0,11.25,1.25ZM15,12.188H7.5a.938.938,0,0,1,0-1.875H15a.938.938,0,0,1,0,1.875Z"
+                          transform="translate(4.75 2.75)" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="bag-item-sm d-flex">
+                    <div class="bag-item-sm__img">
+                      <img src="./assets/img/item-1.png" alt="">
+                    </div>
+                    <div class="bag-item-sm__info d-flex justify-content-between align-items-center">
+                      <div class="bag-item-sm__detail">
+                        <div class="bag-item-sm__title">Item Title</div>
+                        <div class="bag-item-sm__description">
+                          <div class="bag-item-sm__size">Size : M</div>
+                          <div class="bag-item-sm__color">Color : Red</div>
+                        </div>
+                      </div>
+                      <div class="bag-item-sm__price">Rs. 2340</div>
+                    </div>
+                  </div>
+                </li>
+                <div class="d-flex justify-content-center">
+                  <a href="./bag.html" class="view-bag">
+                    View All <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="nav">
+      <div class="section-container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">New In</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuClickableInside" data-bs-auto-close="outside"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Men's Fashion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <li>
+                        <h3 class="dropdown-header" href="#">Top Wear</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Shirts</a></li>
+                      <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                      <li><a class="dropdown-item" href="#">Sweatshirts</a></li>
+                      <li><a class="dropdown-item" href="#">Jackets</a></li>
+                      <li>
+                        <h3 class="dropdown-header" href="#">Bottom Wear</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Jeans</a></li>
+                      <li><a class="dropdown-item" href="#">Trousers</a></li>
+                      <li><a class="dropdown-item" href="#">Shorts</a></li>
+                      <li><a class="dropdown-item" href="#">Joggers</a></li>
+                    </div>
+                    <div class="col-md-6">
+                      <li>
+                        <h3 class="dropdown-header" href="#">Foot Wear</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Casual Shoes</a></li>
+                      <li><a class="dropdown-item" href="#">Formal Shoes</a></li>
+                      <li><a class="dropdown-item" href="#">Sports Shoes</a></li>
+                      <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                      <li><a class="dropdown-item" href="#">Sandals & Flip-Flops</a></li>
+                      <li><a class="dropdown-item" href="#">Socks</a></li>
+                      <li>
+                        <h3 class="dropdown-header" href="#">Inner Wear</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Briefs & Trunks</a></li>
+                      <li><a class="dropdown-item" href="#">Boxers</a></li>
+                      <li><a class="dropdown-item" href="#">Underwears</a></li>
+                      <li><a class="dropdown-item" href="#">Vests</a></li>
+                      <li><a class="dropdown-item" href="#">Thermals</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Women's Fashion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <li>
+                        <h3 class="dropdown-header" href="#">Top Wear</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Shirts</a></li>
+                      <li><a class="dropdown-item" href="#">Tops</a></li>
+                      <li><a class="dropdown-item" href="#">Sweatshirts</a></li>
+                      <li><a class="dropdown-item" href="#">Jackets</a></li>
+                      <li><a class="dropdown-item" href="#">Cardigans</a></li>
+                      <li>
+                        <h3 class="dropdown-header" href="#">Bottom Wear</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Skirts</a></li>
+                      <li><a class="dropdown-item" href="#">Trousers</a></li>
+                      <li><a class="dropdown-item" href="#">Shorts</a></li>
+                      <li><a class="dropdown-item" href="#">Legwear</a></li>
+                      <li><a class="dropdown-item" href="#">Jeans</a></li>
+                    </div>
+                    <div class="col-md-6">
+                      <li>
+                        <h3 class="dropdown-header" href="#">Foot Wear</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Heels</a></li>
+                      <li><a class="dropdown-item" href="#">Flats</a></li>
+                      <li><a class="dropdown-item" href="#">Sports Shoes</a></li>
+                      <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                      <li><a class="dropdown-item" href="#">Sandals</a></li>
+                      <li><a class="dropdown-item" href="#">Boots</a></li>
+                      <li>
+                        <h3 class="dropdown-header" href="#">Inner Wear</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Bras</a></li>
+                      <li><a class="dropdown-item" href="#">Underwears</a></li>
+                      <li><a class="dropdown-item" href="#">Lingerie</a></li>
+                      <li><a class="dropdown-item" href="#">Thermals</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Kid's Fashion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <li>
+                        <h3 class="dropdown-header" href="#">Boy's Clothing</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Shirts</a></li>
+                      <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                      <li><a class="dropdown-item" href="#">Pants</a></li>
+                      <li><a class="dropdown-item" href="#">Jackets</a></li>
+                      <li><a class="dropdown-item" href="#">Shorts</a></li>
+                      <li><a class="dropdown-item" href="#">Shoes</a></li>
+                    </div>
+                    <div class="col-md-6">
+                      <li>
+                        <h3 class="dropdown-header" href="#">Girl's Clothing</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Jeans</a></li>
+                      <li><a class="dropdown-item" href="#">Skirts</a></li>
+                      <li><a class="dropdown-item" href="#">Tops</a></li>
+                      <li><a class="dropdown-item" href="#">Innerwear</a></li>
+                      <li><a class="dropdown-item" href="#">Shirts</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Accessories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <li>
+                        <h3 class="dropdown-header" href="#">Men Accessories</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Backpacks</a></li>
+                      <li><a class="dropdown-item" href="#">Wallets</a></li>
+                      <li><a class="dropdown-item" href="#">Belts</a></li>
+                      <li><a class="dropdown-item" href="#">Sunglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Hats & Caps</a></li>
+                      <li><a class="dropdown-item" href="#">Watches</a></li>
+                      <li><a class="dropdown-item" href="#">Jewellery</a></li>
+                    </div>
+                    <div class="col-md-6">
+                      <li>
+                        <h3 class="dropdown-header" href="#">Women Accessories</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Handbags</a></li>
+                      <li><a class="dropdown-item" href="#">Glasses</a></li>
+                      <li><a class="dropdown-item" href="#">Hats</a></li>
+                      <li><a class="dropdown-item" href="#">Belts</a></li>
+                      <li><a class="dropdown-item" href="#">Jewellery</a></li>
+                      <li><a class="dropdown-item" href="#">Watches</a></li>
+                      <li><a class="dropdown-item" href="#">Shawls & Scarves</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Beauty
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <li>
+                        <h3 class="dropdown-header" href="#">For Men</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Grooming</a></li>
+                      <li><a class="dropdown-item" href="#">Skin Care</a></li>
+                      <li><a class="dropdown-item" href="#">Hair Care</a></li>
+                      <li><a class="dropdown-item" href="#">Deodorants</a></li>
+                    </div>
+                    <div class="col-md-6">
+                      <li>
+                        <h3 class="dropdown-header" href="#">For Ladies</h3>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Makeup</a></li>
+                      <li><a class="dropdown-item" href="#">Skin Care</a></li>
+                      <li><a class="dropdown-item" href="#">Hair Care</a></li>
+                      <li><a class="dropdown-item" href="#">Fragrances</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="sale">Sale</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
   <nav class="bread my-4" aria-label="breadcrumb">
     <ol class="breadcrumb justify-content-center align-items-center m-0 py-2">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -29,8 +408,6 @@
       <li class="breadcrumb-item active" aria-current="page">Dresses</li>
     </ol>
   </nav>
-
-  <h5 style="margin-left:2rem;"><u>Back></u></h5>
 
   <div class="container">
     <div class="row mb-5">
@@ -300,6 +677,120 @@
       </div>
 
     </div>
+  </div>
+
+  <section id="footer">
+    <div class="newsletter">
+      <div class="section-container">
+        <div class="newsletter__container row">
+          <h1 class="newsletter__title col">Subscribe</h1>
+          <h3 class="newsletter__sub-title col">Get notified on latest offers and discounts by joining our newsletter.
+          </h3>
+          <form class="newsletter__form col">
+            <input type="email" placeholder="Enter your email here" class="newsletter__form-input">
+            <button class="btn newsletter__form-btn">
+              Join
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 24.4 22.413">
+                <g id="Icon_feather-send" data-name="Icon feather-send" transform="translate(1 1.413)">
+                  <path id="Path_14" data-name="Path 14" d="M27.173,3,15.245,14.145" transform="translate(-5.187 -3)"
+                    fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                  <path id="Path_15" data-name="Path 15" d="M24.986,3l-7.7,20-4.4-9L3,10Z" transform="translate(-3 -3)"
+                    fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </g>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer__content">
+      <div class="section-container">
+        <div class="row px-5 pb-5">
+          <div class="col-lg-3 col-sm-6 col-md-6 pt-5">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="#">Men's Fashion</a></li>
+              <li><a href="#">Women's Fashion</a></li>
+              <li><a href="#">Kid's Fashion</a>'</li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Beauty</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-6 pt-5">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQs</a>'</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-6 pt-5">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Exchanges</a>'</li>
+              <li><a href="#">Terms & Policies</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-6 pt-5">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17.798" viewBox="0 0 20 17.798">
+                  <path id="Icon_material-location-on" data-name="Icon material-location-on"
+                    d="M13.293,3A5.789,5.789,0,0,0,7.5,8.793c0,4.345,5.793,10.759,5.793,10.759s5.793-6.414,5.793-10.759A5.789,5.789,0,0,0,13.293,3Zm0,7.862a2.069,2.069,0,1,1,2.069-2.069A2.07,2.07,0,0,1,13.293,10.862Z"
+                    transform="translate(-7 -2.5)" fill="none" stroke="#000" stroke-width="1" />
+                </svg> Kathmandu, Nepal
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17.553" viewBox="0 0 17.553 17.553">
+                  <path id="Icon_feather-phone" data-name="Icon feather-phone"
+                    d="M19.719,15.392v2.492A1.663,1.663,0,0,1,17.9,19.545,16.491,16.491,0,0,1,10.723,17,16.212,16.212,0,0,1,5.73,12.012a16.416,16.416,0,0,1-2.555-7.2A1.662,1.662,0,0,1,4.831,3h2.5A1.663,1.663,0,0,1,8.992,4.429a10.647,10.647,0,0,0,.583,2.334A1.659,1.659,0,0,1,9.2,8.515L8.143,9.57a13.3,13.3,0,0,0,4.993,4.983L14.193,13.5a1.667,1.667,0,0,1,1.756-.374,10.7,10.7,0,0,0,2.339.581A1.662,1.662,0,0,1,19.719,15.392Z"
+                    transform="translate(-2.667 -2.5)" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1" />
+                </svg> +977-9823236483
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.035" viewBox="0 0 17.952 12.035">
+                  <g id="Icon_feather-mail" data-name="Icon feather-mail" transform="translate(0.7 0.5)">
+                    <path id="Path_11" data-name="Path 11"
+                      d="M4.655,6H17.9a1.541,1.541,0,0,1,1.655,1.379v8.276A1.541,1.541,0,0,1,17.9,17.035H4.655A1.541,1.541,0,0,1,3,15.655V7.379A1.541,1.541,0,0,1,4.655,6Z"
+                      transform="translate(-3 -6)" fill="none" stroke="#000" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="1" />
+                    <path id="Path_12" data-name="Path 12" d="M19.552,9l-8.276,6.2L3,9" transform="translate(-3 -7.563)"
+                      fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                  </g>
+                </svg> store@gmail.com
+              </li>
+            </ul>
+            <div class="social-links d-flex">
+              <span class="facebook">
+                <a href="#"><img src="./assets/svg/facebook.svg" alt="facebook"></a>
+              </span>
+              <span class="twitter">
+                <a href="#"><img src="./assets/svg/twitter.svg" alt="twitter"></a>
+              </span>
+              <span class="instagram">
+                <a href="#"><img src="./assets/svg/instagram.svg" alt="instagram"></a>
+              </span>
+              <span class="viber">
+                <a href="#"><img src="./assets/svg/viber.svg" alt="viber"></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        Copyright &copy, 2021 all rights reserved
+      </div>
+    </div>
+  </section>
+
+
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
