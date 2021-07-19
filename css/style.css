@@ -15,7 +15,6 @@ body{
     background-color: rgb(255, 255, 255);
 }
 a{
-  text-decoration: none !important;
   color: black !important;
 }
 .dark-font .breadcrumb-item + .breadcrumb-item::before {
@@ -139,3 +138,87 @@ cursor: pointer;
    display: flex !important;
 
  }
+
+ .modal-content{
+   border-radius: 0%;
+   width: 700px;
+ }
+ .number-of-items {
+  width: 35px;
+  border: 1px solid black;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.75rem;
+}
+.cart-btn button{
+  background: black;
+  color: white;
+  letter-spacing: 2px;
+  padding: 1rem;
+  width: 250px;
+}
+.fav{
+  background: rgb(206, 206, 206);
+  border-radius: 50%;
+  margin-left: 1rem;
+  
+}
+.fav i{
+  padding: 1rem;
+  
+}
+
+.lg{
+  background: rgb(209, 207, 207);
+}
+.size-box > div {
+  border: 1px solid black;
+  padding: 0.2rem;
+  margin-right: 1rem;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+}
+.color-choice > div {
+  width: 20px;
+  height: 20px;
+}
+.color-choice .color1 {
+  background-image: linear-gradient(
+    to right top,
+    #a8fa91,
+    #bbf584,
+    #d4f780,
+    #e9f678,
+    #fff573
+  );
+  border: 1px solid black;
+}
+.color-choice .color2 {
+  background-image: linear-gradient(
+    to right top,
+    #555df8,
+    #7a3cf5,
+    #ab34fb,
+    #d626fe,
+    #ff00ff
+  );
+  border: 1px solid black;
+}
+.color-choice .color3 {
+  background-image: linear-gradient(
+    to right top,
+    #ffc7c7,
+    #f9c8e0,
+    #e4cef6,
+    #c4d7ff,
+    #a5e0ff
+  );
+  border: 1px solid black;
+}
+.stars .far:before,
+.stars .fas:before {
+  color: #fac57e;
+}
