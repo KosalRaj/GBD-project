@@ -1,1 +1,3 @@
-<svg xmlns="http://www.w4.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="12.586" height="17.798" viewBox="0 0 12.586 17.798">
+  <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M13.293,3A5.789,5.789,0,0,0,7.5,8.793c0,4.345,5.793,10.759,5.793,10.759s5.793-6.414,5.793-10.759A5.789,5.789,0,0,0,13.293,3Zm0,7.862a2.069,2.069,0,1,1,2.069-2.069A2.07,2.07,0,0,1,13.293,10.862Z" transform="translate(-7 -2.5)" fill="none" stroke="#000" stroke-width="1"/>
+</svg>

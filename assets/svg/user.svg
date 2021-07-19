@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 28.25 32">
+  <g data-type="innerShadowGroup">
+    <path id="Icon_awesome-user" data-name="Icon awesome-user" d="M13.125,15a7.5,7.5,0,1,1,7.5-7.5A7.5,7.5,0,0,1,13.125,15Zm-5.25,1.875h.979a10.2,10.2,0,0,0,8.543,0h.979A7.877,7.877,0,0,1,26.25,24.75v2.438A2.813,2.813,0,0,1,23.438,30H2.813A2.813,2.813,0,0,1,0,27.188V24.75A7.877,7.877,0,0,1,7.875,16.875Z" transform="translate(1 1)" fill="none"/>
+    <path id="Icon_awesome-user-2" data-name="Icon awesome-user" d="M13.125,15a7.5,7.5,0,1,1,7.5-7.5A7.5,7.5,0,0,1,13.125,15Zm-5.25,1.875h.979a10.2,10.2,0,0,0,8.543,0h.979A7.877,7.877,0,0,1,26.25,24.75v2.438A2.813,2.813,0,0,1,23.438,30H2.813A2.813,2.813,0,0,1,0,27.188V24.75A7.877,7.877,0,0,1,7.875,16.875Z" transform="translate(1 1)" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>

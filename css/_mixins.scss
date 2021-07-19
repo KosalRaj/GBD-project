@@ -1,0 +1,53 @@
+@use 'variables' as *;
+@use 'sass:map';
+
+@mixin input() {
+  border: none;
+  border-bottom: 2px solid $color__black;
+  line-height: 60px;
+  text-indent: 30px;
+  outline: none;
+}
+
+@mixin shadow($x: 0, $y: 3px, $blur: 6px, $color: $color__shadow) {
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin button($size: 2rem) {
+  font-size: $size;
+  font-weight: bold;
+  text-align: center;
+  color: $color__white;
+  padding: 0.3125em 1.125em;
+  background: $color__btn--bg;
+  border: none;
+  @include shadow();
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+
+  &:hover {
+    transform: scale(1.02);
+    color: white;
+    background: $color__btn--bg-hover;
+    @include shadow($y: 4px, $blur: 18px);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+  }
+
+  &:active {
+    @include shadow($y: 2px, $blur: 3px);
+  }
+}
+
+@mixin respond($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
