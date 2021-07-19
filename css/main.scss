@@ -460,10 +460,14 @@ header .nav {
 }
 
 /**=== === product card === ===*/
+.slick-track {
+  .product__card {
+    margin: 10px 20px 25px;
+  }
+}
+
 .product {
   &__card {
-    margin: 10px 20px 25px;
-    width: 360px;
     padding: 0;
     overflow: hidden;
     @include shadow();
@@ -524,11 +528,12 @@ header .nav {
   }
 
   &__info {
-    padding: 24px;
+    background: $color__white;
+    padding: 16px 24px;
   }
 
   &__title {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   &__ratings {
@@ -544,17 +549,51 @@ header .nav {
   &__price {
     display: flex;
     margin-top: 24px;
-    justify-content: space-between;
     align-items: center;
 
     .old-price {
       color: $color__darkgrey;
+      font-size: 14px;
+      margin-left: auto;
     }
 
     .current-price {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
+}
+.card {
+  position: relative;
+  z-index: 0;
+}
+.view-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 30;
+  transition: ease-in 0.5s;
+  display: none;
+
+  &:hover {
+    background: rgb(255, 255, 255, 0.8);
+
+    img {
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+    }
+  }
+}
+// .card:hover .view-btn {
+//   display: flex !important;
+// }
+.product__card:hover .view-btn {
+  display: flex !important;
 }
 
 /**=== === === For her/him section === === ===*/

@@ -6,10 +6,6 @@
   color: #12aef7;
 }
 
-.bread {
-  border-bottom: 1px solid gray;
-  border-top: 1px solid gray;
-}
 .breadcrumb-item a {
   text-decoration: none;
   color: lightsalmon;
@@ -210,9 +206,46 @@
   border-radius: 12px;
 }
 
-.feature {
-  background: rgb(236, 236, 236);
+.featured-container {
+  position: relative;
+  /* background: rgb(236, 236, 236); */
+  margin-bottom: 2rem;
+  padding: 20px 0 10px;
 }
+
+/* slider control */
+.slider-control-prev {
+  left: 0;
+}
+.slider-control-next {
+  right: 0;
+}
+.slider-control-next, .slider-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.5;
+}
+.slider-control-next-icon, .slider-control-prev-icon {
+  opacity: 1;
+}
+.slider-control-prev:hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 50%);
+}
+.slider-control-next:hover {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 50%);
+}
+
 
 @media (max-width: 1200px) {
   #carouselExampleControls {
