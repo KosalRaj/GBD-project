@@ -37,31 +37,31 @@ body{
     .progresses ul li::after { 
         position: absolute;
         top: 35px;
-    left: -8px;
-    font-size: 1rem;
-    width: 150px;
+   
+    font-size: 1 rem;
+    width: 20px;
     font-weight: 500;
     }
    
 #step-1::after {
-    content: "Login"
+    content: "Login";
+    right: 15px;
    
 }
 
 #step-2::after {
     content: "Shipping";
-    left: -5px;
+   right: 25px;
 }
 
 #step-3::after {
-    content: "Payment Method"
-   
+    content: "Payment Method";
+  right: 20px;
 }
 
 #step-4::after {
-    content: "Order Confirmation"
-
-   
+    content: "Order Confirm";
+right: 20px;
 }
 .progresses .progress {
     height: 0.8rem;
@@ -103,12 +103,13 @@ color: #fff;
 .submit{
     border-radius:0% !important;
     background-color:#4696e6;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .voucher{
-    border-radius: 0% !important;
+    border-radius:0% !important; 
     background-color: black;
     color: white;
+
 }
 .fw-500 {
     font-weight: 400;
@@ -130,3 +131,10 @@ color: #fff;
 .product-title{
     margin-left: 1rem;
 }
+.form-control-box {
+  
+    border: none;
+    border-bottom: 1px solid #dfdfdf ;
+    margin-right: 1rem;
+  
+  }
