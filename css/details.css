@@ -90,7 +90,7 @@ input[type="radio"]:checked + label.color2 {
   )
  }
  input[type="radio"]:checked + label.color3 {
-  border: 3px solid;
+  border: 3px solid rgb(247, 248, 157);
   background-image: linear-gradient(
     to right top,
     #ffc7c7,
