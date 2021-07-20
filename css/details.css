@@ -41,17 +41,72 @@ color: lightsalmon !important;
   object-fit: contain;
 }
 
-.size-box > div {
-  border: 1px solid black;
-  padding: 0.2rem;
-  margin-right: 1rem;
-  width: 35px;
-  display: flex;
-  justify-content: center;
+input[type="radio"] {
+  display:none;
 }
+
+label {
+ 
+  display: inline-block;
+  border: 1px solid grey;
+  cursor: pointer;
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+ 
+}
+
+.blank-label {
+  display: none;
+
+}
+
+input[type="radio"]:checked + label {
+  background: rgb(218, 218, 218);
+  color: rgb(0, 0, 0);
+}
+
+input[type="radio"]:checked + label.color1 {
+ border: 3px solid  rgb(247, 248, 157);
+ background-image: linear-gradient(
+    to right top,
+    #a8fa91,
+    #bbf584,
+    #d4f780,
+    #e9f678,
+    #fff573
+    )
+}
+input[type="radio"]:checked + label.color2 {
+  border: 3px solid rgb(247, 248, 157);
+  background-image: linear-gradient(
+    to right top,
+    #555df8,
+    #7a3cf5,
+    #ab34fb,
+    #d626fe,
+    #ff00ff
+  )
+ }
+ input[type="radio"]:checked + label.color3 {
+  border: 3px solid;
+  background-image: linear-gradient(
+    to right top,
+    #ffc7c7,
+    #f9c8e0,
+    #e4cef6,
+    #c4d7ff,
+    #a5e0ff
+  )
+  
+ }
+  
+
 .color-choice > div {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .color-choice .color1 {
   background-image: linear-gradient(
@@ -91,15 +146,7 @@ color: lightsalmon !important;
   color: #fac57e;
 }
 
-.number-of-items {
-  width: 35px;
-  border: 1px solid black;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
-}
+
 .cart-btn button {
   background: black;
   color: white;
@@ -110,9 +157,11 @@ color: lightsalmon !important;
 .fav {
   background: rgb(206, 206, 206);
   border-radius: 50%;
+  margin-left: 1rem;
 }
 .fav i {
-  padding: 0.5rem;
+  padding: 1rem;
+  
 }
 .lg {
   background: rgb(209, 207, 207);
@@ -275,4 +324,13 @@ cursor: pointer;
     height: auto;
     object-fit: contain;
 }
+}
+.number-of-items {
+  width: 35px;
+  border: 1px solid black;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.75rem;
 }
