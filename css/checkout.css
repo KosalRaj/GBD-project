@@ -1,85 +1,74 @@
 @import url("http://fonts.cdnfonts.com/css/metropolis-2?styles=21180,21184,21188,21176");
 
-body {
-  background-color: rgb(255, 255, 255);
-  font-family: "Metropolis", sans-serif;
-  font-weight: 300;
+.multi-steps > li.is-active ~ li:before,
+.multi-steps > li.is-active:before {
+  content: counter(stepNum);
+  font-family: inherit;
+  font-weight: 700;
 }
-.progresses {
-  position: relative;
-  max-width: 80%;
-  margin: auto;
-}
-
-.progresses ul {
-  list-style: none;
-  padding: 0;
+.multi-steps > li.is-active ~ li:after,
+.multi-steps > li.is-active:after {
+  background-color: #ededed;
 }
 
-.progresses ul li {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #4696e6;
-  z-index: 200;
-  position: relative;
-}
-
-.progresses .gray {
-  background-color: #a8a8a8;
-}
-
-.progresses ul li.green {
-  color: #000000;
-  background-color: #4696e6;
-}
-
-.progresses ul li::after {
-  position: absolute;
-  top: 35px;
-  left: -8px;
-  font-size: 1rem;
-  width: 150px;
-  font-weight: 500;
-}
-
-#step-1::after {
-  content: "Login";
-}
-
-#step-2::after {
-  content: "Shipping";
-  left: -5px;
-}
-
-#step-3::after {
-  content: "Payment Method";
-}
-
-#step-4::after {
-  content: "Order Confirmation";
-}
-.progresses .progress {
-  height: 0.8rem;
+.multi-steps {
+  margin: 50px 0;
+  display: table;
+  table-layout: fixed;
   width: 100%;
-  top: 33px;
-  position: absolute;
-  background-color: #a8a8a8;
-  border-radius: 10px;
 }
-.progress-bar {
+.multi-steps > li {
+  counter-increment: stepNum;
+  text-align: center;
+  display: table-cell;
+  position: relative;
+  color: black;
+}
+.multi-steps > li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  color: white;
+  display: block;
+  margin: 0 auto 4px;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bold;
+  border-width: 2px;
+  background: #4696e6;
+  border-style: solid;
+  border-color: #4696e6;
+  border-radius: 50%;
+}
+.multi-steps > li:after {
+  content: "";
+  height: 14px;
+  width: 100%;
   background-color: #4696e6;
-}
-.fa-check {
-  color: #fff;
   position: absolute;
-  top: 15px;
-  left: 15px;
-  transform: translate(-50%, -50%);
+  top: 12px;
+  left: 50%;
+  z-index: -1;
+}
+.multi-steps > li:last-child:after {
+  display: none;
+}
+.multi-steps > li.is-active:before {
+  background-color: #ededed;
+  color: #4696e6;
+  border-color: #4696e6;
+}
+.multi-steps > li.is-active ~ li {
+  color: #808080;
+}
+.multi-steps > li.is-active ~ li:before {
+  background-color: #ededed;
+  border-color: #ededed;
 }
 
 .form-check {
-  margin-left: calc(var(--bs-gutter-x) * .5) !important;
+  margin-left: calc(var(--bs-gutter-x) * 0.5) !important;
 }
 
 .form-control,
