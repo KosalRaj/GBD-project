@@ -85,6 +85,32 @@
   color: #fac57e;
 }
 
+.pricing .old-price {
+  color: #6e6e6e;
+  font-weight: bold;
+}
+
+.pricing .current-price {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.pricing .discount-percent {
+  color:rgb(245, 57, 57);
+  font-weight: bold;
+}
+
+.option-title {
+  font-weight: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.product-color,
+.product-size {
+  font-weight: normal;
+  margin-left: 20px;
+}
 .number-of-items {
   width: 35px;
   border: 1px solid black;
