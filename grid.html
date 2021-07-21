@@ -596,9 +596,9 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0 d-flex flex-column justify-content-between">
                       <div class="product-title">
-                        <h2>Printed Flare Dress</h2>
+                        <h3>Printed Flare Dress</h3>
                         <div class="stars">
                           <i class="fas fa-star"></i>
                           <i class="fas fa-star"></i>
@@ -607,41 +607,65 @@
                           <i class="far fa-star"></i> <span style="color:gray; margin-left: 0.25rem;">(410)</span>
                         </div>
                       </div>
-
-                      <div class="pricing">
+                      
+                      <div class="pricing mt-2">
                         <del>
-                          <h5>Rs.4555</h5>
+                          <div class="old-price">Rs.4555</div>
                         </del>
-
+                      
                         <span class="d-flex">
-                          <h5 style="color: #BD9758;"><strong>Rs.2277</strong></h5>
-                          <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
+                          <h5 class="current-price">Rs.2277</h5>
+                          <h5 class="discount-percent">(-50% off)</h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
                         <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items" contenteditable="true">1</div>
+                      <div class="quantity mt-3">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
+                      <div class="d-flex align-items-center mt-3">
                         <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
@@ -690,7 +714,7 @@
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -722,7 +746,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6  mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -744,38 +768,65 @@
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -813,13 +864,13 @@
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">
                   <div class="row">
-                    <div class=" col-md-6">
+                    <div class="col-md-6">
                       <div id="carouselExampleControls" class="carousel slide d-flex align-items-center "
                         data-ride="carousel">
                         <div class="carousel-inner">
@@ -845,7 +896,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -867,38 +918,65 @@
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -936,7 +1014,7 @@
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -968,7 +1046,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -990,38 +1068,65 @@
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1060,7 +1165,7 @@
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -1092,7 +1197,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -1114,38 +1219,65 @@
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1178,18 +1310,20 @@
             </div>
             <button class="view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Quick View</button>
           </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-          
+
                 <div class="modal-body">
                   <div class="row">
                     <div class=" col-md-6">
-                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center " data-ride="carousel">
+                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center "
+                        data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="./assets//img/flare.png" class="d-block w-100" alt="...">
@@ -1213,7 +1347,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -1224,49 +1358,76 @@
                           <i class="far fa-star"></i> <span style="color:gray; margin-left: 0.25rem;">(410)</span>
                         </div>
                       </div>
-          
+
                       <div class="pricing">
                         <del>
                           <h5>Rs.4555</h5>
                         </del>
-          
+
                         <span class="d-flex">
                           <h5 style="color: #BD9758;"><strong>Rs.2277</strong></h5>
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1299,18 +1460,20 @@
             </div>
             <button class="view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Quick View</button>
           </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-          
+
                 <div class="modal-body">
                   <div class="row">
                     <div class=" col-md-6">
-                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center " data-ride="carousel">
+                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center "
+                        data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="./assets//img/flare.png" class="d-block w-100" alt="...">
@@ -1334,7 +1497,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -1345,49 +1508,76 @@
                           <i class="far fa-star"></i> <span style="color:gray; margin-left: 0.25rem;">(410)</span>
                         </div>
                       </div>
-          
+
                       <div class="pricing">
                         <del>
                           <h5>Rs.4555</h5>
                         </del>
-          
+
                         <span class="d-flex">
                           <h5 style="color: #BD9758;"><strong>Rs.2277</strong></h5>
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1420,18 +1610,20 @@
             </div>
             <button class="view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Quick View</button>
           </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-          
+
                 <div class="modal-body">
                   <div class="row">
                     <div class=" col-md-6">
-                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center " data-ride="carousel">
+                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center "
+                        data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="./assets//img/flare.png" class="d-block w-100" alt="...">
@@ -1455,7 +1647,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -1466,49 +1658,76 @@
                           <i class="far fa-star"></i> <span style="color:gray; margin-left: 0.25rem;">(410)</span>
                         </div>
                       </div>
-          
+
                       <div class="pricing">
                         <del>
                           <h5>Rs.4555</h5>
                         </del>
-          
+
                         <span class="d-flex">
                           <h5 style="color: #BD9758;"><strong>Rs.2277</strong></h5>
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1541,18 +1760,20 @@
             </div>
             <button class="view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Quick View</button>
           </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-          
+
                 <div class="modal-body">
                   <div class="row">
                     <div class=" col-md-6">
-                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center " data-ride="carousel">
+                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center "
+                        data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="./assets//img/flare.png" class="d-block w-100" alt="...">
@@ -1576,7 +1797,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -1587,49 +1808,76 @@
                           <i class="far fa-star"></i> <span style="color:gray; margin-left: 0.25rem;">(410)</span>
                         </div>
                       </div>
-          
+
                       <div class="pricing">
                         <del>
                           <h5>Rs.4555</h5>
                         </del>
-          
+
                         <span class="d-flex">
                           <h5 style="color: #BD9758;"><strong>Rs.2277</strong></h5>
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1662,18 +1910,20 @@
             </div>
             <button class="view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Quick View</button>
           </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-          
+
                 <div class="modal-body">
                   <div class="row">
                     <div class=" col-md-6">
-                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center " data-ride="carousel">
+                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center "
+                        data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="./assets//img/flare.png" class="d-block w-100" alt="...">
@@ -1697,7 +1947,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -1708,49 +1958,76 @@
                           <i class="far fa-star"></i> <span style="color:gray; margin-left: 0.25rem;">(410)</span>
                         </div>
                       </div>
-          
+
                       <div class="pricing">
                         <del>
                           <h5>Rs.4555</h5>
                         </del>
-          
+
                         <span class="d-flex">
                           <h5 style="color: #BD9758;"><strong>Rs.2277</strong></h5>
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1783,18 +2060,20 @@
             </div>
             <button class="view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Quick View</button>
           </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-          
+
                 <div class="modal-body">
                   <div class="row">
                     <div class=" col-md-6">
-                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center " data-ride="carousel">
+                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center "
+                        data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="./assets//img/flare.png" class="d-block w-100" alt="...">
@@ -1818,7 +2097,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -1829,49 +2108,76 @@
                           <i class="far fa-star"></i> <span style="color:gray; margin-left: 0.25rem;">(410)</span>
                         </div>
                       </div>
-          
+
                       <div class="pricing">
                         <del>
                           <h5>Rs.4555</h5>
                         </del>
-          
+
                         <span class="d-flex">
                           <h5 style="color: #BD9758;"><strong>Rs.2277</strong></h5>
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1904,18 +2210,20 @@
             </div>
             <button class="view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Quick View</button>
           </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Product View</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Quick View</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-          
+
                 <div class="modal-body">
                   <div class="row">
                     <div class=" col-md-6">
-                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center " data-ride="carousel">
+                      <div id="carouselExampleControls" class="carousel slide d-flex align-items-center "
+                        data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="./assets//img/flare.png" class="d-block w-100" alt="...">
@@ -1939,7 +2247,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                       <div class="product-title">
                         <h2>Printed Flare Dress</h2>
                         <div class="stars">
@@ -1950,49 +2258,76 @@
                           <i class="far fa-star"></i> <span style="color:gray; margin-left: 0.25rem;">(410)</span>
                         </div>
                       </div>
-          
+
                       <div class="pricing">
                         <del>
                           <h5>Rs.4555</h5>
                         </del>
-          
+
                         <span class="d-flex">
                           <h5 style="color: #BD9758;"><strong>Rs.2277</strong></h5>
                           <h5 style="color:rgb(245, 57, 57)"><strong>(-50% off)</strong></h5>
                         </span>
                       </div>
-                      <a class="mb-0" href="./product.html" title="Printed Flare Dress">See full product details</a>
                       <div class="colors mt-2">
                         <h6><strong>Color:</strong> Cream</h6>
                         <div class="color-choice d-flex">
-                          <div class="color1"></div>
-                          <div class="color2 mx-3"></div>
-                          <div class="color3"></div>
+                          <input type="radio" id="color1" name="color" value="" />
+                          <label class="color1" for="color1"></label>
+                          <input type="radio" id="color2" name="color" value="" />
+                          <label class="color2" for="color2"></label>
+                          <input type="radio" id="color3" name="color" value="" />
+                          <label class="color3" for="color3"></label>
                         </div>
                       </div>
                       <div class="size mt-3">
-                        <h6><strong>Size:</strong></h6>
+                        <h6><strong>Size:</strong> L</h6>
                         <div class="size-box d-flex">
-                          <div class="sm">S</div>
-                          <div class="med">M</div>
-                          <div class="lg">L</div>
-                          <div class="xl">XL</div>
-                          <div class="xll">XLL</div>
+                          <input type="radio" id="small" name="fit" value="" />
+                          <label for="small">S</label>
+                          <input type="radio" id="medium" name="fit" value="" />
+                          <label for="medium">M</label>
+                          <input type="radio" id="large" name="fit" value="" />
+                          <label for="large">L</label>
+                          <input type="radio" id="xlarge" name="fit" value="" />
+                          <label for="xlarge">XL</label>
+                          <input type="radio" id="extra" name="fit" value="" />
+                          <label for="extra">XXL</label>
                         </div>
                       </div>
-                      <div class="quantity d-flex align-items-center mt-2">
-                        <h6 class="m-0 mr-4 fw-bold">Qty:</h6>
-                        <div class="number-of-items">1</div>
+                      <div class="quantity align-items-center">
+                        <div class="option-title">Quantity :</div>
+                        <div class="d-flex">
+                          <div class="decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-minus">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                          <div class="item__quantity" contenteditable="true">1</div>
+                          <div class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-plus">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cart-btn d-flex align-items-center mt-2">
-                        <button class="mr-4">ADD TO CART</button>
+                      <div class="d-flex align-items-center mt-2">
+                        <button class="cart-btn mr-4">ADD TO CART</button>
                         <div class="fav"><i class="far fa-heart"></i></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a href="./product.html" class="view-bag">
+                    Full Detail <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>

@@ -56,7 +56,7 @@
     #e9f678,
     #fff573
   );
-  border: 1px solid black;
+  border: 1px solid grey;
 }
 .color-choice .color2 {
   background-image: linear-gradient(
@@ -67,7 +67,7 @@
     #d626fe,
     #ff00ff
   );
-  border: 1px solid black;
+  border: 1px solid grey;
 }
 .color-choice .color3 {
   background-image: linear-gradient(
@@ -78,7 +78,7 @@
     #c4d7ff,
     #a5e0ff
   );
-  border: 1px solid black;
+  border: 1px solid grey;
 }
 .stars .far:before,
 .stars .fas:before {
@@ -120,19 +120,84 @@
   justify-content: center;
   margin: 1rem;
 }
-.cart-btn button {
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  border: 1px solid grey;
+  cursor: pointer;
+  margin-right: 12px;
+  padding: 0 12px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.color-choice label {
+  height: 25px;
+  width: 25px;
+}
+
+.blank-label {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  color: rgb(0, 0, 0);
+  outline: 3px solid black;
+}
+
+/* 
+.cart-btn {
   background: black;
   color: white;
   letter-spacing: 2px;
   padding: 1rem;
   width: 250px;
+} */
+.cart-btn {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  padding: 1em 1.5em;
+  background: black;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  text-decoration: none;
+}
+.cart-btn:hover {
+  transform: scale(1.02);
+  color: white;
+  background: black;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.cart-btn:active {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
 }
 .fav {
   background: rgb(206, 206, 206);
   border-radius: 50%;
+  margin-left: 4rem;
+  cursor: pointer;
 }
 .fav i {
-  padding: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+}
+.fav:active i {
+  color: chocolate;
+  fill: chocolate;
 }
 .lg {
   background: rgb(209, 207, 207);
@@ -236,7 +301,6 @@
   position: relative;
   /* background: rgb(236, 236, 236); */
   margin-bottom: 2rem;
-  padding: 20px 0 10px;
 }
 
 /* slider control */
@@ -312,7 +376,7 @@
 }
 @media (max-width: 436px) {
   .vertical-img {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 360px) {

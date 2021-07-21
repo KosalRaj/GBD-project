@@ -13,7 +13,7 @@
   box-shadow: $x $y $blur $color;
 }
 
-@mixin button($size: 2rem) {
+@mixin button($size: 2rem, $bg: $color__btn-bg, $fg: $color__white) {
   font-size: $size;
   font-weight: bold;
   text-align: center;

@@ -411,7 +411,7 @@
   </nav>
 
   <div class="container">
-    <div class="row mb-5">
+    <div class="row mb-md-5">
       <div class="col-md-2 vertical-img d-flex flex-column justify-content-between align-items-center">
         <i class="fas fa-chevron-up"></i>
         <img src="./assets/img/flare.png" alt="">
@@ -419,7 +419,7 @@
         <img src="./assets/img/back.png" alt="">
         <i class="fas fa-chevron-down"></i>
       </div>
-      <div class="col-md-5 col-center n-auto">
+      <div class="col-lg-5 col-md-6 col-center n-auto">
         <div id="carouselExampleControls" class="carousel slide d-flex align-items-center " data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -444,7 +444,7 @@
           </button>
         </div>
       </div>
-      <div class="col-md-5 right-info d-flex flex-column justify-content-between">
+      <div class="col-lg-5 col-md-6 right-info d-flex flex-column justify-content-between">
         <div class="product-title">
           <h3>Printed Flare Dress</h3>
           <div class="stars">
@@ -472,68 +472,58 @@
             Color : <span class="product-color">Cream</span>
           </div>
           <div class="color-choice d-flex">
-            <div class="color1"></div>
-            <div class="color2 mx-4"></div>
-            <div class="color3"></div>
+            <input type="radio" id="color1" name="color" value="" />
+            <label class="color1" for="color1"></label>
+            <input type="radio" id="color2" name="color" value="" />
+            <label class="color2" for="color2"></label>
+            <input type="radio" id="color3" name="color" value="" />
+            <label class="color3" for="color3"></label>
           </div>
         </div>
-        <div class="size-option">
+        <div class="size-option mt-3 mt-md-0">
           <div class="option-title">
             Size : <span class="product-size">L</span>
           </div>
           <div class="size-box d-flex">
-            <div class="sm">S</div>
-            <div class="med">M</div>
-            <div class="lg">L</div>
-            <div class="xl">XL</div>
-            <div class="xll">XLL</div>
+            <input type="radio" id="small" name="fit" value=""/>
+            <label for="small">S</label>
+            <input type="radio" id="medium" name="fit" value=""/>
+            <label for="medium">M</label>
+            <input type="radio" id="large" name="fit" value="" />
+            <label for="large">L</label>
+            <input type="radio" id="xlarge" name="fit" value="" />
+            <label for="xlarge">XL</label>
+            <input type="radio" id="extra" name="fit" value="" />
+            <label for="extra">XXL</label>
           </div>
-
         </div>
-        <div class="quantity d-flex align-items-center">
+        <div class="quantity align-items-center mt-3 mt-md-0">
           <div class="option-title">Quantity :</div>
-          <div class="number-of-items" contentEditable="true">1</div>
+          <div class="d-flex">
+            <div class="decrease">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+            <div class="item__quantity" contenteditable="true">1</div>
+            <div class="increase">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+          </div>
         </div>
-        <div class="cart-btn d-flex align-items-center">
-          <button class="mr-4">ADD TO CART</button>
+        <div class="d-flex align-items-center mt-4 mt-md-0">
+          <button class="cart-btn">ADD TO CART</button>
           <div class="fav"><i class="far fa-heart"></i></div>
         </div>
       </div>
     </div>
     <div class="row d-flex">
-      <div class="order-2 w-lg-50 w-md-100">
-        <h5 class="text-center">SHOP THE LOOK</h5>
-        <hr class="line">
-      </div>
-
-      <div class="order-1 col-md-7 d-flex justify-content-center">
-        <div class="product__card" style="width:298px">
-						<div class="product__img">
-							<img src="assets/img/beautiful.jpg">
-							<div class="product__discount">
-								20%
-							</div>
-						</div>
-						<div class="product__info">
-							<div class="product__title">
-								Solid A-Line Dress
-							</div>
-							<div class="product__ratings">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-								<span>(77)</span>
-							</div>
-							<div class="product__price">
-								<span class="current-price">Rs.1320</span>
-								<del class="old-price">Rs.1650</del>
-							</div>
-						</div>
-					</div>
-      </div>
-      <div class="col-md-5 mt-lg-0 mt-md-0 mt-4">
+      <div class="col-lg-5 col-md-6 mt-lg-0 mt-md-0 mt-4 order-md-1">
         <div class="delivery-info mb-4">
           <h6>100% Original products</h6>
           <h6>Pay on delivery might be available</h6>
@@ -611,6 +601,37 @@
                 Click here to start a return or find out more.
 
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row col-lg-7 col-md-6 d-flex justify-content-center order-md-0 mt-5 mt-md-0">
+        <div class="w-lg-50 w-md-100">
+          <h5 class="text-center">SHOP THE LOOK</h5>
+          <hr class="line">
+        </div>
+        <div class="product__card" style="width:298px">
+          <div class="product__img">
+            <img src="assets/img/beautiful.jpg">
+            <div class="product__discount">
+              20%
+            </div>
+          </div>
+          <div class="product__info">
+            <div class="product__title">
+              Solid A-Line Dress
+            </div>
+            <div class="product__ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>(77)</span>
+            </div>
+            <div class="product__price">
+              <span class="current-price">Rs.1320</span>
+              <del class="old-price">Rs.1650</del>
             </div>
           </div>
         </div>
